@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 243">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff60b;
+        font-size: 140px;
+        font-family: HelveticaNeue, Helvetica Neue;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <text id="_hello_" data-name="{ hello }" class="cls-1"><tspan x="11.69" y="133">{</tspan><tspan class="cls-2" y="133" xml:space="preserve"> hello </tspan><tspan y="133">}</tspan></text>
+</svg>
