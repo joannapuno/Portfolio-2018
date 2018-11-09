@@ -65,6 +65,10 @@ header {
         svg {
             height: 100%;
         }
+
+        svg:hover {
+            cursor: pointer;
+        }
     }
     
 }
@@ -74,7 +78,7 @@ header {
 ///////////////// MAIN CONTENT //////////////////
 
 main {
-    min-height: 600px;
+    min-height: 800px;
     padding: 30px 0;
 }
 
@@ -82,33 +86,89 @@ main {
 .main-content {
     display: flex;
     flex-direction: column;
+    padding: 50px;
+}
 
-    .about-container {
-        display: flex;
 
-        .profile-img {
-            padding: 50px;
+.about-container {
+    display: flex;
+    margin-bottom: 80px;
 
-            .img-bg svg {
-                z-index: -100;
-                height: 500px;
-                position: absolute;
-                top: -5px;
-                
+    .profile-img {
+        padding: 50px;
+
+        .img-bg svg {
+            z-index: -100;
+            height: 500px;
+            position: absolute;
+            top: -5px;
+            
+        }
+        .img-container {
+            width: 300px;
+            height: 300px;
+            position: relative;
+
+            img {
+                height: 100%;
             }
-            .img-container {
-                width: 300px;
-                height: 300px;
-                position: relative;
-    
-                img {
-                    height: 100%;
-                }
-            }
-        }  
+        }
+    }  
 
-        .profile-text {
-            padding: 50px;
+    .profile-text {
+        padding: 50px;
+    }
+}
+
+
+///////////////// What I do //////////////////
+
+.work-info-box-1 {
+    margin-top: 20px;
+    width: 100%;
+
+    .work-info-icon {
+        height: 400px;
+        width: 40%;
+        background: $main-color;
+    }
+    .work-info-text {
+        height: 400px;
+        width: 60%;
+        background: $secondary-color;
+    }
+}
+
+.work-info-box-2 {
+    margin-top: 20px;
+    width: 100%;
+
+    .work-info-text {
+        height: 400px;
+        width: 60%;
+        background: $secondary-color;
+    }
+    .work-info-icon {
+        height: 400px;
+        width: 40%;
+        background: $main-color;
+    }
+}
+
+
+///////////////// Projects //////////////////
+
+.projects-container {
+    width: 100%;
+
+    .project-boxes {
+        width: 100%;
+        margin-top: 20px;
+
+        .project-box {
+            height: 400px;
+            background: $main-color;
+            margin-right: 10px;
         }
     }
 }
