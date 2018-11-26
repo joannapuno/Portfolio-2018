@@ -63,6 +63,10 @@ h1,h2,h3,h4,h5,p,span {
     margin: 0;
 }
 
+h1,h2,h3,h4,h5 {
+    color: $main-color;
+}
+
 h5 {
     font-size: 30px;
     font-weight: 700;
@@ -70,7 +74,14 @@ h5 {
 
 p {
     font-size: 16px;
+    color: rgb(68, 68, 68);
 }
+
+span {
+    color: rgb(68, 68, 68);
+}
+
+
 
 
 ///////////////// HEADER //////////////////
@@ -245,26 +256,41 @@ nav {
 .about-container {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 120px;
     margin-bottom: 50px;
+    position: relative;
+
+    .profile-bg {
+        background: #FFF2FE;
+        width: 50%;
+        padding: 100px 20px;
+        box-shadow: 0px 1px 5px 0 #22222261;
+        
+    }
 
     .profile-img {
-        width: 100%;
-        height: 100%;
-        position: relative;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: -100px;
         margin-right: 20px;
         margin-bottom: 20px;
-        overflow: hidden;
 
         img {
-            width: 100%;
             height: 100%;
             border-radius: 100%;
+            box-shadow: 1px 1px 5px 0 #22222261;
         }
     }  
 
     .profile-text {     
         text-align: center;
+        padding: 20px;
+        
+    
+        p {
+            font-size: 0.9em;
+        }
     }
 }
 
@@ -274,6 +300,7 @@ nav {
 .work-info-container {
     margin-top: 80px;
     text-align: center;
+    
 }
 
 .mobile-text {
@@ -286,6 +313,7 @@ nav {
 .work-info-box-1 {
     margin-top: 20px;
     width: 100%;
+    box-shadow: 1px 1px 5px 0 #22222261;
 
     .work-info-icon {
         display: flex;
@@ -310,6 +338,7 @@ nav {
 .work-info-box-2 {
     margin-top: 20px;
     width: 100%;
+    box-shadow: 1px 1px 5px 0 #22222261;
 
     .work-info-text {
         height: 400px;
@@ -363,6 +392,7 @@ nav {
             background: $main-color;
             margin: 5px;
             
+            
         }
     }
 }
@@ -379,6 +409,7 @@ nav {
         .profile-img-container {
             width: 80%;
             height: 80%;
+            box-shadow: 1px 1px 5px 0 #22222261;
         
             img {
                 height: 100%;
@@ -441,6 +472,10 @@ footer {
         text-align: center;
     }
 
+    h1,h2,h3,h4,h5 {
+        font-size: 1.3em;
+    }
+
     //Hero
     .hero {
         height: 80vh;   
@@ -449,16 +484,20 @@ footer {
             }
     }
 
-
     //About
     .about-container {
-        .profile-img {
-            margin: 0;
-            padding: 0;
-        }   
-        .profile-text {
-        
+        margin-bottom: 0;
+    
+        .profile-bg {
+            width: 100%;
+            padding: 50px 10px;      
         }
+    
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            top: -100px;
+        }  
     }
     // What I do
     .work-info-box-1, .work-info-box-2 {
@@ -485,8 +524,6 @@ footer {
     }
 
     
-    
-
     //Projects
     .project-box {
         height: 200px;

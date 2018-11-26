@@ -33,12 +33,19 @@ h1, h2, h3, h4, h5, p, span {
   font-family: "Roboto", sans-serif;
   margin: 0; }
 
+h1, h2, h3, h4, h5 {
+  color: #6350B1; }
+
 h5 {
   font-size: 30px;
   font-weight: 700; }
 
 p {
-  font-size: 16px; }
+  font-size: 16px;
+  color: #444444; }
+
+span {
+  color: #444444; }
 
 header .nav-bar {
   background-color: #6350B1;
@@ -144,21 +151,30 @@ nav {
 .about-container {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-top: 120px;
+  margin-bottom: 50px;
+  position: relative; }
+  .about-container .profile-bg {
+    background: #FFF2FE;
+    width: 50%;
+    padding: 100px 20px;
+    box-shadow: 0px 1px 5px 0 #22222261; }
   .about-container .profile-img {
-    width: 100%;
-    height: 100%;
-    position: relative;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -100px;
     margin-right: 20px;
-    margin-bottom: 20px;
-    overflow: hidden; }
+    margin-bottom: 20px; }
     .about-container .profile-img img {
-      width: 100%;
       height: 100%;
-      border-radius: 100%; }
+      border-radius: 100%;
+      box-shadow: 1px 1px 5px 0 #22222261; }
   .about-container .profile-text {
-    text-align: center; }
+    text-align: center;
+    padding: 20px; }
+    .about-container .profile-text p {
+      font-size: 0.9em; }
 
 .work-info-container {
   margin-top: 80px;
@@ -172,7 +188,8 @@ nav {
 
 .work-info-box-1 {
   margin-top: 20px;
-  width: 100%; }
+  width: 100%;
+  box-shadow: 1px 1px 5px 0 #22222261; }
   .work-info-box-1 .work-info-icon {
     display: flex;
     justify-content: center;
@@ -190,7 +207,8 @@ nav {
 
 .work-info-box-2 {
   margin-top: 20px;
-  width: 100%; }
+  width: 100%;
+  box-shadow: 1px 1px 5px 0 #22222261; }
   .work-info-box-2 .work-info-text {
     height: 400px;
     width: 60%;
@@ -237,7 +255,8 @@ nav {
     height: 300px; }
     .contact-container .profile-container .profile-img-container {
       width: 80%;
-      height: 80%; }
+      height: 80%;
+      box-shadow: 1px 1px 5px 0 #22222261; }
       .contact-container .profile-container .profile-img-container img {
         height: 100%; }
     .contact-container .profile-container .social-icons {
@@ -267,13 +286,21 @@ footer ul {
 @media screen and (max-width: 600px) {
   h1, h2, h3, h4, h5, p, span {
     text-align: center; }
+  h1, h2, h3, h4, h5 {
+    font-size: 1.3em; }
   .hero {
     height: 80vh; }
     .hero .hero-content svg {
       height: 80%; }
-  .about-container .profile-img {
-    margin: 0;
-    padding: 0; }
+  .about-container {
+    margin-bottom: 0; }
+    .about-container .profile-bg {
+      width: 100%;
+      padding: 50px 10px; }
+    .about-container .profile-img {
+      width: 160px;
+      height: 160px;
+      top: -100px; }
   .work-info-box-1 .work-info-icon, .work-info-box-2 .work-info-icon {
     width: 100%;
     display: flex;
