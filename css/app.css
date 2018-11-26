@@ -17,6 +17,9 @@ ul, li {
   ul li, li li {
     margin-right: 20px; }
 
+a:hover {
+  cursor: pointer; }
+
 .bg-1 {
   background: #dbdbdb; }
 
@@ -76,7 +79,8 @@ header .nav-bar {
   height: 3px;
   content: '';
   top: 50%;
-  left: 0; }
+  left: 0;
+  outline: none; }
 
 .bar {
   margin-top: -0.1rem; }
@@ -140,8 +144,6 @@ nav {
     bottom: 50px; }
     .hero .down-arrow svg {
       height: 100%; }
-    .hero .down-arrow svg:hover {
-      cursor: pointer; }
 
 .main-content {
   display: flex;
@@ -270,6 +272,9 @@ nav {
 
 .contact-heading-sm {
   display: none; }
+
+.project-links-list a {
+  font-size: 0.7em; }
 
 footer .footer {
   background: #6350B1;

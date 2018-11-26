@@ -31,6 +31,10 @@ ul,li {
     }
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 
 //col-sm-#
 //col-md-#
@@ -127,7 +131,8 @@ header {
 		height: 3px;
 		content: '';
 		top: 50%;
-		left: 0;
+        left: 0;
+        outline:none;
 	}
 
 	& {
@@ -219,7 +224,6 @@ nav {
     
     .hero-content {
         height: 200px;
-        
         svg {
             height: 100%;
         }
@@ -232,14 +236,12 @@ nav {
 
         svg {
             height: 100%;
-        }
-
-        svg:hover {
-            cursor: pointer;
+            
         }
     }
     
 }
+
 
 
 
@@ -439,6 +441,11 @@ nav {
 
 .contact-heading-sm {
     display: none;
+}
+
+///////////////// Project Links //////////////////
+.project-links-list a{
+    font-size: 0.7em;
 }
 
 
