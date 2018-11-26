@@ -30,7 +30,7 @@ ul, li {
   background: #949393; }
 
 h1, h2, h3, h4, h5, p, span {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0; }
 
 h5 {
@@ -65,20 +65,20 @@ header .nav-bar {
   transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
   position: absolute;
   background: #fff;
-  width: 2rem;
-  height: 0.3rem;
+  width: 40px;
+  height: 3px;
   content: '';
   top: 50%;
   left: 0; }
 
 .bar {
-  margin-top: -0.2rem; }
+  margin-top: -0.1rem; }
 
 .bar::before {
-  top: -1.2rem; }
+  top: -1rem; }
 
 .bar::after {
-  top: 1.2rem; }
+  top: 1rem; }
 
 .bar::before, .bar::after {
   transform: rotate(0deg); }
@@ -119,7 +119,7 @@ nav {
         color: #fff; }
 
 .hero {
-  height: 90vh;
+  height: 100vh;
   background-color: #6350B1;
   position: relative;
   z-index: -10; }
@@ -143,36 +143,46 @@ nav {
 
 .about-container {
   display: flex;
+  flex-direction: column;
   margin-top: 50px;
   margin-bottom: 50px; }
-  .about-container .profile-img .img-bg {
-    z-index: -100;
-    position: absolute;
-    top: -50px; }
-    .about-container .profile-img .img-bg svg {
-      height: 400px; }
-  .about-container .profile-img .img-container {
-    width: 400px;
-    height: 300px;
+  .about-container .profile-img {
+    width: 100%;
+    height: 100%;
     position: relative;
     margin-right: 20px;
+    margin-bottom: 20px;
     overflow: hidden; }
-    .about-container .profile-img .img-container img {
-      height: 100%; }
+    .about-container .profile-img img {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%; }
   .about-container .profile-text {
-    padding: 30px;
-    margin-left: 80px; }
+    text-align: center; }
 
 .work-info-container {
-  margin-top: 80px; }
+  margin-top: 80px;
+  text-align: center; }
+
+.mobile-text {
+  display: none;
+  font-size: 2em;
+  font-weight: 700;
+  color: #FFE3FA; }
 
 .work-info-box-1 {
   margin-top: 20px;
   width: 100%; }
   .work-info-box-1 .work-info-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 400px;
     width: 40%;
     background: #6350B1; }
+    .work-info-box-1 .work-info-icon svg {
+      width: 60%;
+      height: 60%; }
   .work-info-box-1 .work-info-text {
     height: 400px;
     width: 60%;
@@ -186,11 +196,29 @@ nav {
     width: 60%;
     background: #FFE3FA; }
   .work-info-box-2 .work-info-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 400px;
     width: 40%;
     background: #6350B1; }
+    .work-info-box-2 .work-info-icon svg {
+      width: 60%;
+      height: 60%; }
+
+.work-info-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px; }
+  .work-info-text span {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    color: #6350B1; }
 
 .projects-container {
+  text-align: center;
   width: 100%;
   margin-top: 80px;
   margin-bottom: 50px; }
@@ -239,21 +267,25 @@ footer ul {
 @media screen and (max-width: 600px) {
   h1, h2, h3, h4, h5, p, span {
     text-align: center; }
+  .hero {
+    height: 80vh; }
+    .hero .hero-content svg {
+      height: 80%; }
   .about-container .profile-img {
     margin: 0;
     padding: 0; }
-    .about-container .profile-img .img-container {
-      width: 300px;
-      height: 300px;
-      margin-right: 0; }
-  .about-container .profile-text {
-    padding: 30px;
-    margin-left: 20px; }
-  .work-info-box-1, .work-info-box-2 {
-    height: 150px; }
-    .work-info-box-1 .work-info-icon, .work-info-box-1 .work-info-text, .work-info-box-2 .work-info-icon, .work-info-box-2 .work-info-text {
-      height: 150px;
-      width: 50%; }
+  .work-info-box-1 .work-info-icon, .work-info-box-2 .work-info-icon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .work-info-box-1 .work-info-icon svg, .work-info-box-2 .work-info-icon svg {
+      width: 50%;
+      height: 50%; }
+  .work-info-box-1 .work-info-text, .work-info-box-2 .work-info-text {
+    display: none; }
+  .work-info-box-1 .mobile-text, .work-info-box-2 .mobile-text {
+    display: block; }
   .project-box {
     height: 200px; }
   .profile-container {
