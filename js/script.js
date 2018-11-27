@@ -1,6 +1,6 @@
 // console.log('working!');
 
-/* A simple and scalable hamburger menu using css transitions. */
+/* HamBurger Menu */
 var isActive = false;
 
 $('.menuBtn').on('click', function() {

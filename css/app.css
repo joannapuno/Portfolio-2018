@@ -66,7 +66,6 @@ header .nav-bar {
   margin: 2rem;
   height: 1.7rem;
   width: 2rem;
-  z-index: 100;
   outline: 0;
   padding: 0;
   border: 0; }
@@ -76,7 +75,7 @@ header .nav-bar {
   position: absolute;
   background: #fff;
   width: 40px;
-  height: 3px;
+  height: 5px;
   content: '';
   top: 50%;
   left: 0;
@@ -98,9 +97,11 @@ header .nav-bar {
 .active .bar {
   background: 0; }
   .active .bar::before {
-    transform: rotate(45deg); }
+    transform: rotate(45deg);
+    background: #6350B1; }
   .active .bar::after {
-    transform: rotate(-45deg); }
+    transform: rotate(-45deg);
+    background: #6350B1; }
   .active .bar::before, .active .bar::after {
     top: 0; }
   .active .bar, .active .bar::before, .active .bar::after {
@@ -108,15 +109,14 @@ header .nav-bar {
 
 nav {
   width: 300px;
-  height: 90%;
-  background: #eaeaea9a;
+  height: 60%;
+  background: #FFE3FA;
   position: absolute;
   transform: translateX(-300px);
   transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
-  padding-top: 6.2rem; }
+  padding-top: 6.2em; }
   .menu-open nav {
-    transform: translateX(0);
-    z-index: 100; }
+    transform: translateX(0); }
   nav ul {
     margin: 0;
     list-style: none;
@@ -124,12 +124,13 @@ nav {
     nav ul li {
       padding: 20px 5px; }
       nav ul li a {
-        font-size: 2rem;
-        color: #fff;
+        font-size: 1em;
+        color: #6350B1;
         margin-left: 30px; }
-      nav ul li:hover {
-        background: #686868;
-        color: #fff; }
+      nav ul li a:hover {
+        box-shadow: 0px 7px 0 0 #6350B1;
+        text-decoration: none;
+        color: #505050; }
 
 .hero {
   height: 100vh;
@@ -152,18 +153,27 @@ nav {
   display: flex;
   flex-direction: column;
   padding: 20px; }
+  .main-content .shapes-bg {
+    height: 650px;
+    overflow: hidden;
+    position: absolute;
+    z-index: -100; }
+    .main-content .shapes-bg svg {
+      height: 100%; }
 
 .about-container {
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
-  margin-bottom: 50px;
-  position: relative; }
+  margin-top: 200px;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 100; }
   .about-container .profile-bg {
     background: #FFF2FE;
     width: 50%;
     padding: 100px 20px;
-    box-shadow: 0px 1px 5px 0 #22222261; }
+    box-shadow: 0px 1px 5px 0 #22222261;
+    position: relative; }
   .about-container .profile-img {
     width: 200px;
     height: 200px;
@@ -182,7 +192,7 @@ nav {
       font-size: 0.9em; }
 
 .work-info-container {
-  margin-top: 80px;
+  margin-top: 150px;
   text-align: center; }
 
 .mobile-text {
@@ -193,36 +203,36 @@ nav {
 
 .work-info-box-1 {
   margin-top: 20px;
-  width: 100%;
+  width: 80%;
   box-shadow: 1px 1px 5px 0 #22222261; }
   .work-info-box-1 .work-info-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 300px;
     width: 40%;
     background: #6350B1; }
     .work-info-box-1 .work-info-icon svg {
       width: 60%;
       height: 60%; }
   .work-info-box-1 .work-info-text {
-    height: 400px;
+    height: 300px;
     width: 60%;
     background: #FFE3FA; }
 
 .work-info-box-2 {
   margin-top: 20px;
-  width: 100%;
+  width: 80%;
   box-shadow: 1px 1px 5px 0 #22222261; }
   .work-info-box-2 .work-info-text {
-    height: 400px;
+    height: 300px;
     width: 60%;
     background: #FFE3FA; }
   .work-info-box-2 .work-info-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 300px;
     width: 40%;
     background: #6350B1; }
     .work-info-box-2 .work-info-icon svg {
@@ -302,8 +312,12 @@ footer ul {
       height: 80%; }
   .about-container {
     margin-bottom: 0; }
+    .about-container .shapes-bg {
+      height: 400px; }
+      .about-container .shapes-bg svg {
+        height: 80%; }
     .about-container .profile-bg {
-      width: 100%;
+      width: 80%;
       padding: 50px 10px; }
     .about-container .profile-img {
       width: 160px;
@@ -333,4 +347,8 @@ footer ul {
     display: block;
     margin-bottom: 10px; }
   .email-link {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .project-links-list ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0; } }
