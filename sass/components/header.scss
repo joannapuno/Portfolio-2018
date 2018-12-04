@@ -1,0 +1,123 @@
+///////////////// Hamburger Menu //////////////////
+
+
+.menu {
+	transition: 0.1s transform linear;
+	position: absolute;
+	background: 0;
+	float: left;
+	margin: 2rem;
+	height: 1.7rem;
+	width: 2rem;
+	outline: 0;
+	padding: 0;
+    border: 0;
+    z-index: 100;
+}
+
+// Menu Icon Animation //
+
+.bar {
+	&, &::before, &::after {
+		transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+		position: absolute;
+		background: #fff;
+		width: 40px;
+		height: 5px;
+		content: '';
+		top: 50%;
+        left: 0;
+        outline:none;
+	}
+
+	& {
+		margin-top: -0.1rem
+	}
+
+	&::before {
+        top: -1rem;
+	}
+
+	&::after {
+        top: 1rem;
+	}
+
+	&::before,
+	&::after {
+        transform: rotate(0deg);
+	}
+
+	.active & {
+        background: 0;
+
+		&::before {
+            transform: rotate(45deg);
+            background: $main-color;
+		}
+
+		&::after {
+            transform: rotate(-45deg);
+            background: $main-color;
+		}
+
+		&::before,
+		&::after {
+			top: 0;
+		}
+
+		&,
+		&::before,
+		&::after {
+            transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+		}
+    }
+    
+}
+
+.menuBtn[type=button]:focus {
+    outline: none;
+}
+
+// OPENED MENU //
+
+nav {
+	width: 300px;
+	height: 60%;
+	background: $secondary-color;
+	position: absolute;
+	transform: translateX(-300px);
+	transition: transform 0.6s cubic-bezier(.56,.1,.34,.91);
+    padding-top: 6.2em;
+    z-index: 10;
+    
+
+	.menu-open & {
+        transform: translateX(0);
+	}
+	
+	ul {
+		margin: 0;
+		list-style: none;
+		padding: 0;
+		
+		li {
+            padding: 20px 5px;
+            
+            a {
+                font-size: 1em;
+                color: $main-color;
+                margin-left: 30px;
+            }
+
+            a:hover {
+                box-shadow: 0px 7px 0 0 $main-color;
+                text-decoration: none;
+                color: rgb(80, 80, 80);
+            }
+			
+			// &:hover {
+            //     color: #fff;
+			// }
+		}
+	}
+}

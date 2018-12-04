@@ -1,0 +1,59 @@
+// GENERAL
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+main {
+    min-height: 600px;
+    padding: 20px 0;
+}
+.section-text {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+ul,li {
+    list-style-type: none;
+    margin:0;
+
+    li {
+        margin-right: 20px;
+    }
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+//TYPE
+
+//Roboto Sans Serif
+//Light 100
+//Regular 400
+//Bold 700
+
+h1,h2,h3,h4,h5,p,span {
+    font-family: $main-type;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5 {
+    color: $main-color;
+}
+
+h5 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+}
+
+span {
+    color: rgb(68, 68, 68);
+}

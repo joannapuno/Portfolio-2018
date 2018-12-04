@@ -1,0 +1,140 @@
+///////////////// MAIN CONTENT + ABOUT//////////////////
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    .shapes-bg  {
+        height: 650px;
+        overflow: hidden;
+        position: absolute;
+        z-index: -100;
+
+        svg {
+            height: 100%;
+        }
+    }
+}
+.about-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 100;
+
+    .profile-bg {
+        background: #FFF2FE;
+        width: 50%;
+        padding: 100px 20px;
+        box-shadow: 0px 1px 5px 0 #22222261;
+        position: relative;
+        
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: -100px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+
+        img {
+            height: 100%;
+            border-radius: 100%;
+            box-shadow: 1px 1px 5px 0 #22222261;
+        }
+    }  
+
+    .profile-text {     
+        text-align: center;
+        padding: 20px;
+        
+    
+        p {
+            font-size: 0.9em;
+        }
+    }
+}
+
+
+///////////////// What I do //////////////////
+
+.work-info-container {
+    margin-top: 150px;
+    text-align: center;
+    
+}
+
+.mobile-text {
+    display: none;
+    font-size: 2em;
+    font-weight: 700;   
+    color: $secondary-color;
+}
+
+.work-info-box-1 {
+    margin-top: 20px;
+    width: 80%;
+    box-shadow: 1px 1px 5px 0 #22222261;
+
+    .work-info-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 40%;
+        background: $main-color;
+
+        svg {
+            width: 60%;
+            height: 60%;
+        }
+    }
+    .work-info-text {
+        height: 300px;
+        width: 60%;
+        background: $secondary-color;
+    }
+}
+
+.work-info-box-2 {
+    margin-top: 20px;
+    width: 80%;
+    box-shadow: 1px 1px 5px 0 #22222261;
+
+    .work-info-text {
+        height: 300px;
+        width: 60%;
+        background: $secondary-color;
+    }
+    .work-info-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 40%;
+        background: $main-color;
+
+        svg {
+            width: 60%;
+            height: 60%;
+        }
+    }
+}
+
+.work-info-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+    span {
+        text-align: center;
+        font-size: 3em;
+        font-weight: 700;   
+        color: $main-color;
+    }
+
+}

@@ -1,0 +1,76 @@
+///////////////// Projects - From Home //////////////////
+
+.projects-container {
+    text-align:center;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 50px;
+
+    .project-boxes {
+        width: 100%;
+        margin-top: 20px;
+
+        .project-box {
+            height: 260px;
+            margin: 5px;  
+            overflow: hidden;
+
+            .thumb {  
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+///////////////// Projects - Single Project Page //////////////////
+.project-hero {
+    height:50vh;
+    background:$main-color;
+
+    .hero-content {
+        height: 200px;
+        
+        svg {
+            height: 100%;
+        }
+    }   
+}
+.project-body {
+
+    .project-info {
+        margin: 80px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        .project-image {
+            
+            overflow: hidden;
+            img {
+                width:100%;
+            }
+        }
+
+        .project-text {
+            text-align: center;
+            margin: 30px 0;
+        }
+    }
+    
+    .project-full {
+        overflow: hidden;
+        margin: 80px 0;
+    
+        img {
+            width: 100%;
+        }
+    }
+    
+    .project-conclusion {
+        text-align: center;
+        margin: 80px 0;
+    }
+}

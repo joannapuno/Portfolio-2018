@@ -1,0 +1,43 @@
+///////////////// Contact Me! //////////////////
+
+.contact-container {
+    margin: 30px 0;
+
+    .profile-container {
+        margin-right: 20px;
+        height: 300px;
+
+        .profile-img-container {
+            width: 80%;
+            height: 80%;
+            box-shadow: 1px 1px 5px 0 #22222261;
+        
+            img {
+                height: 100%;
+            }
+        }
+
+        .social-icons {
+            margin: 10px 0;
+    
+            i {
+                margin: 0 10px;
+            }
+        }
+    }
+
+    .contact-heading {
+        margin-bottom: 20px;
+        
+    }
+
+    .email-box {
+        .icon {
+            margin-right: 10px;
+        }
+    }  
+}
+
+.contact-heading-sm {
+    display: none;
+}

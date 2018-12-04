@@ -1,0 +1,25 @@
+///////////////// HERO //////////////////
+.hero {
+    height: 100vh;
+    background-color: $main-color;
+    position: relative;
+    
+    .hero-content {
+        height: 200px;
+        
+        svg {
+            height: 100%;
+        }
+    }   
+}
+
+.down-arrow {
+    height: 20px;
+    position: absolute;
+    bottom: 50px;
+    z-index: 100;
+
+    svg {
+        height: 100%;     
+    }
+}

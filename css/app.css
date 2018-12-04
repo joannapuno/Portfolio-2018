@@ -20,18 +20,6 @@ ul, li {
 a:hover {
   cursor: pointer; }
 
-.bg-1 {
-  background: #dbdbdb; }
-
-.bg-2 {
-  background: lightgray; }
-
-.bg-3 {
-  background: #acacac; }
-
-.bg-4 {
-  background: #949393; }
-
 h1, h2, h3, h4, h5, p, span {
   font-family: "Roboto", sans-serif;
   margin: 0; }
@@ -99,6 +87,9 @@ span {
   .active .bar, .active .bar::before, .active .bar::after {
     transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s; }
 
+.menuBtn[type=button]:focus {
+  outline: none; }
+
 nav {
   width: 300px;
   height: 60%;
@@ -141,6 +132,21 @@ nav {
   z-index: 100; }
   .down-arrow svg {
     height: 100%; }
+
+footer .footer {
+  background: #6350B1;
+  padding: 20px; }
+  footer .footer span {
+    color: #FFE3FA;
+    font-size: 14px; }
+  footer .footer a {
+    color: #fff; }
+
+footer ul {
+  margin-right: 20px; }
+
+.project-links-list a {
+  font-size: 0.7em; }
 
 .main-content {
   display: flex;
@@ -253,8 +259,42 @@ nav {
     margin-top: 20px; }
     .projects-container .project-boxes .project-box {
       height: 260px;
-      background: #6350B1;
-      margin: 5px; }
+      margin: 5px;
+      overflow: hidden; }
+      .projects-container .project-boxes .project-box .thumb img {
+        width: 100%; }
+
+.project-hero {
+  height: 50vh;
+  background: #6350B1; }
+  .project-hero .hero-content {
+    height: 200px; }
+    .project-hero .hero-content svg {
+      height: 100%; }
+
+.project-body .project-info {
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .project-body .project-info .project-image {
+    overflow: hidden; }
+    .project-body .project-info .project-image img {
+      width: 100%; }
+  .project-body .project-info .project-text {
+    text-align: center;
+    margin: 30px 0; }
+
+.project-body .project-full {
+  overflow: hidden;
+  margin: 80px 0; }
+  .project-body .project-full img {
+    width: 100%; }
+
+.project-body .project-conclusion {
+  text-align: center;
+  margin: 80px 0; }
 
 .contact-container {
   margin: 30px 0; }
@@ -278,21 +318,6 @@ nav {
 
 .contact-heading-sm {
   display: none; }
-
-.project-links-list a {
-  font-size: 0.7em; }
-
-footer .footer {
-  background: #6350B1;
-  padding: 20px; }
-  footer .footer span {
-    color: #FFE3FA;
-    font-size: 14px; }
-  footer .footer a {
-    color: #fff; }
-
-footer ul {
-  margin-right: 20px; }
 
 @media screen and (max-width: 600px) {
   h1, h2, h3, h4, h5, p, span {
@@ -349,3 +374,26 @@ footer ul {
     flex-direction: column;
     align-items: center;
     padding: 0; } }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); }
+
+.modal-main {
+  position: fixed;
+  background: white;
+  width: 80%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.display-block {
+  display: block; }
+
+.display-none {
+  display: none; }

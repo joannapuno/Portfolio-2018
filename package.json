@@ -4,14 +4,19 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "node_modules/.bin/gulp watch"
+    "gulp": "node_modules/.bin/gulp watch",
+    "build": "babel src -d lib"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "react-modal": "^3.6.1",
+    "babel-cli": "^6.0.0"
   }
 }
-

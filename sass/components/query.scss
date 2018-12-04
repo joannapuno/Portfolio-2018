@@ -1,0 +1,112 @@
+///////////////// MEDIA Qs //////////////////
+
+@media screen and (max-width:600px) {
+
+    //Type
+    h1,h2,h3,h4,h5,p,span {
+        text-align: center;
+    }
+
+    h1,h2,h3,h4,h5 {
+        font-size: 1.3em;
+    }
+
+    //Hero
+    .hero {
+        height: 80vh;   
+            .hero-content svg {
+                height: 80%;
+            }
+    }
+
+    //About
+    .about-container {
+        margin-bottom: 0;
+        margin-top: 130px;
+
+        .shapes-bg {
+            height: 100%;
+            top: -100px;
+           
+            
+            svg {
+                height: 100%;
+                
+            }
+        }
+    
+        .profile-bg {
+            width: 80%;
+            padding: 50px 10px;      
+        }
+    
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            top: -100px;
+        }  
+    }
+    // What I do
+
+    .work-info-container {
+        margin-top: 50px;
+    }
+    .work-info-box-1, .work-info-box-2 {
+
+        .work-info-icon {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            svg {
+                width: 50%;
+                height: 50%;
+            }           
+        }
+        .work-info-text {
+            display: none;
+        }
+
+        .mobile-text {
+            display: block;
+
+        }
+    }
+
+    
+    //Projects
+    .project-box {
+        height: 200px;
+    }
+
+    //Contact Me
+    .profile-container {
+        margin: 0;
+    }
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-heading {
+        display: none;
+    }
+
+    .contact-heading-sm {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .email-link {
+        font-size: 20px;
+    }
+
+    // Project-Links
+    .project-links-list ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+}
+

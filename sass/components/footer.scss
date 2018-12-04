@@ -1,0 +1,25 @@
+///////////////// FOOTER //////////////////
+
+footer {
+    .footer {
+        background: $main-color;
+        padding: 20px;
+        
+        span {
+            color: $secondary-color;
+            font-size: 14px;
+        }
+        a {
+            color: #fff;
+        }
+    }
+
+    ul {
+        margin-right: 20px;
+    }
+}
+
+///////////////// Project Links //////////////////
+.project-links-list a{
+    font-size: 0.7em;
+}
