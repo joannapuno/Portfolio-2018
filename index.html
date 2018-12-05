@@ -18,19 +18,17 @@
             <div class="menu-container">
                 <button class="menuBtn menu" type="button">
                         <span class="bar"></span>
-                </button>
-                        
+                </button>       
                     <nav>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">Work</a></li>
+                            <li><a href="./index.html" >Home</a></li>
+                            <li><a href="#down" id="downAboutLink">About Me</a></li>
+                            <li><a href="#downWork" id="downWorkLink">Work</a></li>
                             <li><a href="#">Graphic Design</a></li>
-                            <li><a href="#">Contact Me</a></li>
+                            <li><a href="#downContact" id="downContactLink">Contact Me</a></li>
                         </ul>
                     </nav>
             </div>
-
         <!-- HERO -->
         <div class="hero bg-2 d-flex flex-column align-items-center justify-content-center">
             <div class="hero-content">
@@ -201,7 +199,7 @@
                 </div>
 
                 <!-- PROJECTS SECTION -->
-                <div class="projects-container d-flex flex-column align-items-center">
+                <div id="downWork" class="projects-container d-flex flex-column align-items-center">
                     <div class="section-text d-flex flex-column align-items-center">
                         <h5>Here are my beloved works!!</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate delectus vero, illum rerum saepe placeat explicabo similique, eaque accusantium voluptate quidem accusamus laudantium. Dolor esse fuga in dicta, impedit iusto!
@@ -209,19 +207,29 @@
                     </div>
 
                     <div class="project-boxes d-flex row justify-content-center">
-                        <div class="project-box col-lg-3 col-md-4 col-sm-12">proj#1</div>
-                        <div class="project-box col-lg-3 col-md-4 col-sm-12">proj#2</div>
-                        <div class="project-box col-lg-3 col-md-4 col-sm-12">proj#3</div>
-                        <div class="project-box col-lg-3 col-md-4 col-sm-12">proj#4</div>
-                        <div class="project-box col-lg-3 col-md-4 col-sm-12">proj#5</div>
-                        <div class="project-box col-lg-3 col-md-4 col-sm-12">proj#6</div>
+                       <a href="./views/quoteMachine.html" class=" project-box col-lg-3 col-md-4 col-sm-12">
+                            <div class="thumb">
+                                <img src="./img/quoteMachine/quoteMachine-1.png" alt="">
+                            </div>
+                        </a>
+                       <a href="./quoteMachine.html" class=" project-box col-lg-3 col-md-4 col-sm-12">
+                            <div class="thumb">
+                                <img src="./img/quoteMachine/quoteMachine-1.png" alt="">
+                            </div>
+                        </a>
+                       <a href="./quoteMachine.html" class=" project-box col-lg-3 col-md-4 col-sm-12">
+                            <div class="thumb">
+                                <img src="./img/quoteMachine/quoteMachine-1.png" alt="">
+                            </div>
+                        </a>
+                        
                     </div>
                 </div>
 
 
                 <!-- CONTACT SECTION -->
 
-                <div class="contact-container d-flex justify-content-center row">
+                <div id="downContact" class="contact-container d-flex justify-content-center row">
                     <div class="contact-heading-sm">
                         <h5>Contact me!!</h5>
                         <p>some subtitle</p>
@@ -286,6 +294,8 @@
     <script>
             window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')    
     </script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="./js/script.js"></script> 
 </body>
 </html>

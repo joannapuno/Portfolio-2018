@@ -1,6 +1,4 @@
-// console.log('working!');
-
-// Hamburger Menu YUMMM
+////////////////// HAMBURGER MENU ///////////////////////
 var isActive = false;
 
 $('.menuBtn').on('click', function() {
@@ -14,13 +12,42 @@ $('.menuBtn').on('click', function() {
 	isActive = !isActive;
 });
 
-// Down Arrow Button
+////////////////// SCROLLING ON CLICK FUNCTION///////////////////////
+
+// Main Down Arrow Button
 $("#downLink").click(function() {
-    var offset = 20; //Offset of 20px
+    var offset = 20; 
 
     $('html, body').animate({
         scrollTop: $("#down").offset().top + offset
     }, 1000);
+});
+
+// About Down Arrow Button
+$("#downAboutLink").click(function() {
+    var offset = 20; 
+
+    $('html, body').animate({
+        scrollTop: $("#down").offset().top + offset
+    }, 1000);
+});
+
+// Projects Down Arrow Button
+$("#downWorkLink").click(function() {
+    var offset = 20; 
+
+    $('html, body').animate({
+        scrollTop: $("#downWork").offset().top + offset
+    }, 2000);
+});
+
+// Contact Me Down Arrow Button
+$("#downContactLink").click(function() {
+    var offset = 20; //Offset of 20px
+
+    $('html, body').animate({
+        scrollTop: $("#downContact").offset().top + offset
+    }, 2000);
 });
 
 
