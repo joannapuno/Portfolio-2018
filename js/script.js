@@ -56,6 +56,14 @@ var body = $("html, body");
 body.stop().animate({scrollTop:0}, 500, 'swing', function() { 
 });
 
-
+////////////////// INTERACTIVE FUNCTIONS - FUN!!! ///////////////////////
+$('.thumb').mouseover(function(){
+    $(this).css('opacity','.2');
+    $('.hover-text span').text('Project Title');
+    
+}).mouseout(function(){
+    $(this).css('opacity','1');
+   
+});
 
 
