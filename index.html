@@ -208,7 +208,7 @@
                     </div>
 
                     <div class="project-boxes d-flex row justify-content-center">
-                       <a href="./views/todo.html" class=" project-box col-lg-3 col-md-4 col-sm-12">
+                       <a href="./views/todo.html" class=" project-box col-lg-3 col-md-4 col-sm-12 my_popup_open">
                             <div class="thumb">
                                 <div class="hover-text">
                                     <span></span>
@@ -259,7 +259,8 @@
                             <img src="./img/profile.png" alt="">
                         </div>
                         <div class="social-icons d-flex align-items-center justify-content-center">
-                           <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                            <a href="#"><i class="far fa-envelope fa-lg "></i></a>
+                            <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
                             <a href="#"><i class="fab fa-github fa-lg"></i></a>
                             <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
                         </div>
@@ -269,13 +270,26 @@
                             <h5>Contact me!!</h5>
                             <p>some subtitle</p>
                         </div>
-                        <div class="email-box d-flex align-items-center">
-                            <div class="icon">
+                        <div class="email-box d-flex flex-column align-items-center">
+                            <form action="" class="d-flex flex-column">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name">
+
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject">
+
+                                <label for="message">Your Message</label>
+                                <input type="text" id="message">
+
+                                <input type="submit" value="submit">
+                            </form>
+                    
+                            <!-- <div class="icon">
                                <a href="#"><i class="far fa-envelope fa-lg "></i></a> 
-                            </div>
-                            <div class="email-link">
+                            </div> -->
+                            <!-- <div class="email-link">
                                <a href="#"><span>J.Puno0909@gmail.com</span></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -314,8 +328,7 @@
     <script>
             window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')    
     </script>
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
     <script src="./js/script.js"></script> 
 </body>
 </html>
