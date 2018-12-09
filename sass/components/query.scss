@@ -1,6 +1,6 @@
 ///////////////// MEDIA Qs //////////////////
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
 
     //Type
     h1,h2,h3,h4,h5,p,span {
@@ -17,6 +17,12 @@
             .hero-content svg {
                 height: 80%;
             }
+    }
+
+    // Header/Menu
+
+    nav {
+        min-height: 80vh;
     }
 
     //About

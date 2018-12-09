@@ -67,19 +67,3 @@ $('.thumb').mouseover(function(){
 });
 
 ////////////////// WORK CLICK OVERLAY ///////////////////////
-
-// $(document).ready(function() {
-
-//     // Initialize the plugin
-//     $('#my_popup').popup();
-
-//   });
-
-
-//   $('#fade').popup({
-//     transition: 'all 0.3s',
-//     scrolllock: true // optional
-//   });
-
-var overlay = jQuery('<div id="overlay"> </div>');
-overlay.appendTo(document.body)

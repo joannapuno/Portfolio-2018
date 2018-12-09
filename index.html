@@ -199,6 +199,7 @@
 
                 </div>
 
+                
                 <!-- PROJECTS SECTION -->
                 <div id="downWork" class="projects-container d-flex flex-column align-items-center">
                     <div class="section-text d-flex flex-column align-items-center">
@@ -206,44 +207,71 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate delectus vero, illum rerum saepe placeat explicabo similique, eaque accusantium voluptate quidem accusamus laudantium. Dolor esse fuga in dicta, impedit iusto!
                             </p>
                     </div>
-
+                    <!-- PROJECT #1 -->
                     <div class="project-boxes d-flex row justify-content-center">
-                       <a href="./views/todo.html" class=" project-box col-lg-3 col-md-4 col-sm-12 my_popup_open">
+                       <a href="#fancyTodo" rel="modal:open" class=" project-box col-lg-3 col-md-4 col-sm-12 my_popup_open">
                             <div class="thumb">
                                 <div class="hover-text">
                                     <span></span>
                                 </div>
-                                
                                 <img src="./img/fancyTodo/todo-1.png" alt="">
                             </div>
                         </a>
-                       <a href="./views/quoteMachine.html" class=" project-box col-lg-3 col-md-4 col-sm-12">
+
+                        <div id="fancyTodo" class="modal">
+                            <div>
+                                <iframe src="./views/todo.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" ></iframe>
+                            </div>
+                            <a href="#" rel="modal:close">Close</a>
+                        </div>
+
+                    <!-- PROJECT #2 -->
+                       <a href="#quoteMachine" rel="modal:open" class=" project-box col-lg-3 col-md-4 col-sm-12 my_popup_open">
                             <div class="thumb">
-                                <img src="./img/quoteMachine/quoteMachine-1.png" alt="">
+                                <div class="hover-text">
+                                    <span></span>
+                                </div>
+                                <img src="./img/fancyTodo/todo-1.png" alt="">
                             </div>
                         </a>
-                       <a href="./views/quoteMachine.html" class=" project-box col-lg-3 col-md-4 col-sm-12">
+                        <div id="quoteMachine" class="modal">
+                            <div>
+                                <iframe src="./views/quoteMachine.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" ></iframe>
+                            </div>
+                            <a href="#" rel="modal:close">Close</a>
+                        </div>
+
+                    <!-- PROJECT #3 -->
+                       <a href="#newsfeed" rel="modal:open" class=" project-box col-lg-3 col-md-4 col-sm-12 my_popup_open">
                             <div class="thumb">
-                                <img src="./img/quoteMachine/quoteMachine-1.png" alt="">
+                                <div class="hover-text">
+                                    <span></span>
+                                </div>
+                                <img src="./img/fancyTodo/todo-1.png" alt="">
                             </div>
                         </a>
-                       <a href="./views/sechelt.html" class=" project-box col-lg-3 col-md-4 col-sm-12">
+                        <div id="newsfeed" class="modal">
+                            <div>
+                                <iframe src="./views/newsfeed.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" ></iframe>
+                            </div>
+                            <a href="#" rel="modal:close">Close</a>
+                        </div>
+
+                    <!-- PROJECT #4 -->
+                       <a href="#sechelt" rel="modal:open" class=" project-box col-lg-3 col-md-4 col-sm-12 my_popup_open">
                             <div class="thumb">
-                                <img src="./img/sechelt/sechelt-1.png" alt="">
+                                <div class="hover-text">
+                                    <span></span>
+                                </div>
+                                <img src="./img/fancyTodo/todo-1.png" alt="">
                             </div>
                         </a>
-                       <a href="./views/newsfeed.html" class=" project-box col-lg-3 col-md-4 col-sm-12">
-                            <div class="thumb">
-                                <img src="./img/newsfeed/newsfeed-1.png" alt="">
+                        <div id="sechelt" class="modal">
+                            <div>
+                                <iframe src="./views/sechelt.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" ></iframe>
                             </div>
-                        </a>
-                       <a href="./quoteMachine.html" class=" project-box col-lg-3 col-md-4 col-sm-12">
-                            <div class="thumb">
-                                <img src="./img/quoteMachine/quoteMachine-1.png" alt="">
-                            </div>
-                        </a>
-                        
-                    </div>
+                            <a href="#" rel="modal:close">Close</a>
+                        </div>
                 </div>
 
 
@@ -328,7 +356,8 @@
     <script>
             window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')    
     </script>
-    <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <script src="./js/script.js"></script> 
 </body>
 </html>
