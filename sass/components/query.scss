@@ -113,6 +113,13 @@
         align-items: center;
         padding: 0;
     }
+
+    // Google Map
+    .location-map {
+        iframe {
+            height: 40vh;
+        }
+    }
     
 }
 

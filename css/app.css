@@ -263,7 +263,9 @@ footer ul {
       overflow: hidden; }
       .projects-container .project-boxes .project-box .thumb img {
         height: 100%;
-        position: relative; }
+        width: 100%;
+        position: relative;
+        box-shadow: 1px 0px 4px 0 #a1a1a1dc; }
       .projects-container .project-boxes .project-box .thumb .hover-text {
         position: absolute;
         color: #222;
@@ -338,6 +340,9 @@ iframe {
 .contact-heading-sm {
   display: none; }
 
+.location-map iframe {
+  min-height: 30vh; }
+
 @media screen and (max-width: 700px) {
   h1, h2, h3, h4, h5, p, span {
     text-align: center; }
@@ -394,4 +399,6 @@ iframe {
   .project-links-list ul {
     flex-direction: column;
     align-items: center;
-    padding: 0; } }
+    padding: 0; }
+  .location-map iframe {
+    height: 40vh; } }

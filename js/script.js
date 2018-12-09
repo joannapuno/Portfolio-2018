@@ -51,10 +51,10 @@ $("#downContactLink").click(function() {
 });
 
 
-//Scroll up when Refreshed
-var body = $("html, body");
-body.stop().animate({scrollTop:0}, 500, 'swing', function() { 
-});
+// //Scroll up when Refreshed
+// var body = $("html, body");
+// body.stop().animate({scrollTop:0}, 500, 'swing', function() { 
+// });
 
 ////////////////// INTERACTIVE FUNCTIONS - FUN!!! ///////////////////////
 $('.thumb').mouseover(function(){

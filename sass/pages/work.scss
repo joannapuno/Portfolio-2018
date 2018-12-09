@@ -14,11 +14,14 @@
             height: 260px;
             margin: 5px;  
             overflow: hidden;
+            
 
             .thumb {  
                 img {
                     height: 100%; 
-                    position: relative;   
+                    width: 100%;
+                    position: relative;  
+                    box-shadow: 1px 0px 4px 0 #a1a1a1dc; 
                 }
 
                 .hover-text {

@@ -41,3 +41,10 @@
 .contact-heading-sm {
     display: none;
 }
+
+.location-map {
+    
+    iframe {
+        min-height: 30vh;
+    }
+}
