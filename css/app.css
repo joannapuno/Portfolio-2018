@@ -27,9 +27,23 @@ h1, h2, h3, h4, h5, p, span {
 h1, h2, h3, h4, h5 {
   color: #6350B1; }
 
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 2.2em; }
+
+h4 {
+  font-size: 2em; }
+
 h5 {
-  font-size: 30px;
-  font-weight: 700; }
+  font-size: 1.8em; }
+
+h6 {
+  font-size: 1.5em; }
 
 p {
   font-size: 16px;
@@ -343,11 +357,14 @@ iframe {
 .location-map iframe {
   min-height: 30vh; }
 
+.text-box {
+  margin: 20px 0; }
+  .text-box p {
+    margin: 10px 0; }
+
 @media screen and (max-width: 700px) {
   h1, h2, h3, h4, h5, p, span {
     text-align: center; }
-  h1, h2, h3, h4, h5 {
-    font-size: 1.3em; }
   .hero {
     height: 80vh; }
     .hero .hero-content svg {
@@ -402,3 +419,7 @@ iframe {
     padding: 0; }
   .location-map iframe {
     height: 40vh; } }
+
+@media screen and (max-width: 700px) and (max-width: 700px) {
+  .text-box p {
+    text-align: left; } }
