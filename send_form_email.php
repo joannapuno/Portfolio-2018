@@ -3,7 +3,8 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "j.puno0909@gmail.com";
-    $email_subject = "Portfolio Contact Me";
+    $email_subject = "Your email subject line";
+    mail($email_to, $email_subject, $message, $headers);
  
     function died($error) {
         // your error code can go here
@@ -18,8 +19,7 @@ if(isset($_POST['email'])) {
     // validation expected data exists
     if(!isset($_POST['name']) ||
         !isset($_POST['email']) ||
-        !isset($_POST['message']) ||
-        !isset($_POST['subject'])) {
+        !isset($_POST['message'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
  
@@ -27,7 +27,7 @@ if(isset($_POST['email'])) {
  
     $name = $_POST['name']; // required
     $email_from = $_POST['email']; // required
-    $message = $_POST['message']; // required
+    $comments = $_POST['message']; // required
  
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -41,7 +41,7 @@ if(isset($_POST['email'])) {
   if(!preg_match($string_exp,$name)) {
     $error_message .= 'The Name you entered does not appear to be valid.<br />';
   }
- 
+
  
   if(strlen($message) < 2) {
     $error_message .= 'The Message you entered do not appear to be valid.<br />';
