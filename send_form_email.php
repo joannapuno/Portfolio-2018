@@ -1,40 +1,80 @@
 <?php
-require_once 'lib/SendGrid.php';
-require_once 'lib/Unirest.php';
-SendGrid::register_autoloader();
-// <sendgrid_username>,<sendgrid_password> should be replaced with the SendGrid credentials
-$sendgrid_username = 'joannapuno';
-$sendgrid_password = 'P0k3mon0909';
-// update the <from_address> with your email address
-$from_email = "j.puno0909@gmail.com";
-if ($_SERVER['REQUEST_METHOD'] == 'POST') 
-{
-  // get values from form
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
-  // make a secure connection to SendGrid
-  $sendgrid = new SendGrid($sendgrid_username, $sendgrid_password);
-  $mail     = new SendGrid\Email();
-  $mail->addTo($name)->
-    setFrom($from_email)->
-    setEmail($email)->
-    setMessage($message);
-  # use the Web API to send your message
-  $response = $sendgrid->web->send($mail);
-  # check request response
-  if ($response->message == 'success')
-  {
-    $message = "Email sent successfully";
-    $status = ' success';
-    $name = '';
-    $email = '';
-    $message = '';
+if(isset($_POST['email'])) {
+ 
+    $email_to = "j.puno0909@gmail.com";
+    $email_subject = "Subject";
+    mail($email_to, $email_subject, $message, $headers);
+
+    // ERROR MESSAGE
+    function died($error) {
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br /><br />";
+        echo $error."<br /><br />";
+        echo "Please go back and fix these errors.<br /><br />";
+        die();
+    }
+ 
+ 
+    //  VALIDATION
+    if(!isset($_POST['name']) ||
+        !isset($_POST['email']) ||
+        !isset($_POST['message'])) {
+        died('We are sorry, but there appears to be a problem with the form you submitted.');       
+    }
+ 
+     
+  //  FORM REQUIRED FIELDS
+    $name = $_POST['name']; 
+    $email_from = $_POST['email']; 
+    $message = $_POST['message']; 
+ 
+    $error_message = "";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+ 
+  if(!preg_match($email_exp,$email_from)) {
+    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
   }
-  else
-  {
-    $errorMessage = "Email not sent - " . $response->errors[0];
-    $status = ' error';
+ 
+    $string_exp = "/^[A-Za-z .'-]+$/";
+ 
+  if(!preg_match($string_exp,$name)) {
+    $error_message .= 'The Name you entered does not appear to be valid.<br />';
   }
+
+ 
+  if(strlen($message) < 2) {
+    $error_message .= 'The Message you entered do not appear to be valid.<br />';
+  }
+ 
+  if(strlen($error_message) > 0) {
+    died($error_message);
+  }
+ 
+    $email_message = "Form details below.\n\n";
+ 
+     
+    function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+ 
+     
+    $email_message .= "Name: ".clean_string($name)."\n";
+    $email_message .= "Email: ".clean_string($email_from)."\n";
+    $email_message .= "Message: ".clean_string($message)."\n";
+ 
+// HEADERS
+$headers = 'From: '.$email_from."\r\n".
+'Reply-To: '.$email_from."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+mail($email_to, $email_subject, $email_message, $headers);  
+?>
+ 
+<!-- more -->
+ 
+Thank you!
+ 
+<?php
+ 
 }
 ?>
