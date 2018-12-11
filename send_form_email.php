@@ -1,11 +1,5 @@
 <?php
-if(isset($_POST['contactform'])) {
-
-    // HEADERS
-    $headers = 'From: '.$email_from."\r\n".
-    'Reply-To: '.$email_from."\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-    mail($email_to, $email_subject, $email_message, $headers);  
+if(isset($_POST['email'])) {
  
     $email_to = "j.puno0909@gmail.com";
     $email_subject = "Your email subject line";
@@ -69,10 +63,14 @@ if(isset($_POST['contactform'])) {
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Message: ".clean_string($message)."\n";
  
-
+// HEADERS
+$headers = 'From: '.$email_from."\r\n".
+'Reply-To: '.$email_from."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+mail($email_to, $email_subject, $email_message, $headers);  
 ?>
  
-<!-- more todo for thank you message -->
+<!-- more -->
  
 Thank you!
  
