@@ -3,7 +3,7 @@ if(isset($_POST['email'])) {
  
     $email_to = "j.puno0909@gmail.com";
     $email_subject = "Subject";
-    mail($email_to, $email_subject, $message, $headers);
+    // mail($email_to, $email_subject, $message, $headers);
 
     // ERROR MESSAGE
     function died($error) {
@@ -67,7 +67,7 @@ if(isset($_POST['email'])) {
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-mail($email_to, $email_subject, $email_message, $headers);  
+@mail($email_to, $email_subject, $email_message, $headers);  
 ?>
  
 <!-- more -->
