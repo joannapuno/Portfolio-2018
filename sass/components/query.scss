@@ -1,6 +1,11 @@
 ///////////////// MEDIA Qs //////////////////
 
 @media screen and (max-width:700px) {
+    .wrapper {
+        width: 100%;
+        margin: 0;
+        max-width: 1000px;
+    }
 
     //Type
     h1,h2,h3,h4,h5,p,span {
@@ -103,6 +108,9 @@
     .profile-container {
         margin: 0;
     }
+    .contact-form {
+        width: 80vw;
+    }
     .contact-info {
         text-align: center;
     }
@@ -116,16 +124,10 @@
         margin-bottom: 10px;
     }
 
-    .email-link {
-        font-size: 20px;
-    }
+    // .email-link {
+    //     font-size: 20px;
+    // }
 
-    // Project-Links
-    .project-links-list ul{
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
 
     // Google Map
     .location-map {

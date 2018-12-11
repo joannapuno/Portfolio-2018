@@ -57,6 +57,8 @@ $("#downContactLink").click(function() {
 // });
 
 ////////////////// INTERACTIVE FUNCTIONS - FUN!!! ///////////////////////
+
+// Hover on Project box
 $('.thumb').mouseover(function(){
     $(this).css('opacity','.2');
     $('.hover-text span').text('Project Title');
@@ -66,27 +68,18 @@ $('.thumb').mouseover(function(){
     
 });
 
-////////////////// FORM ///////////////////////
+// Animate on Scroll
 $(document).ready(function() {
-    var formFields = $('.form-field');
+
+    $(window).scroll(function() {
     
-    formFields.each(function() {
-      var field = $(this);
-      var input = field.find('input');
-      var label = field.find('label');
-      
-      function checkInput() {
-        var valueLength = input.val().length;
-        
-        if (valueLength > 0 ) {
-          label.addClass('freeze')
-        } else {
-              label.removeClass('freeze')
-        }
+      if ($(window).scrollTop() > 500) {
+          $(this).show("slide", { direction: "left" }, 1000);
       }
-      
-      input.change(function() {
-        checkInput()
-      })
+      if ($(window).scrollTop() < 500) { $('.work-info-text').slideUp(500);
+      }
     });
-  });
+    });
+
+
+

@@ -66,91 +66,11 @@
 }
 
 ///////////////// Form //////////////////
-// .contact-form {
-//     width: 50%;
-// }
-.float-labels-form {
-    position: relative;
-    margin: 0 auto;
-    width: 400px;
-    max-width: 100%;
-    background-color: $secondary-color;
-    padding: 3em 40px 2.5em;
-    box-sizing: border-box;
-    box-shadow: 33px 33px 80px #b2b2b2
-  }
+.contact-form {
+    width: 50vw;
 
-.form-field {
-    position: relative;
-  }
-  
-  /* You can use "input ~ label" selector too */
-  input + label {
-    position: absolute;
-    left: 20px;
-    top: 1.15em;
-    transition: transform 200ms ease;
-    
-    /* You have to use this to make it clickable through*/
-    pointer-events: none;
-  }
-  
-  input:focus + label,
-  input + label.freeze {
-    font-size: 0.7em;
-    font-weight: 400;
-    
-    /* Use "Translate" function instead of classic positioning for better performance */
-    transform: translateY(-3em);
-  }
-
-  
-  
-  .form-field {
-    width: 100%;
-    margin-bottom: 2em;
-  }
-  
-  .form-field:last-of-type {
-    margin-bottom: 0;
-  }
-  
-  input + label {
-    color: #C0BC91;
-    font-size: inherit;
-    line-height: inherit;
-    font-weight: 300;
-  }
-  
-  input[type="text"],
-  input[type="email"] {
-    width: 100%;
-    padding: 1em 20px;
-    font-size: inherit;
-    line-height: inherit;
-    letter-spacing: inherit;
-    border: none;
-    box-sizing: border-box;
-  }
-  
-  input[type="submit"] {
-    font-size: inherit;
-    background-color: $main-color;
-    color: #ffffff;
-    border: none;
-    padding: 1em 26px;
-    text-transform: uppercase;
-    letter-spacing: inherit;
-    margin-bottom: 0;
-    transition: all 200ms ease;
-  }
-  
-  input[type="submit"]:hover {
-    cursor: pointer;
-    background-color: #ffffff;
-    color: #2D2D25;
-  }
-  
-  input:focus {
-    outline: none;
-  }
+    iframe {
+        height: 105vh;
+       
+    }
+}
