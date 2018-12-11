@@ -40,7 +40,7 @@
 
 ///////////////// Projects - Single Project Page //////////////////
 .project-hero {
-    height:50vh;
+    height:30vh;
     background:$main-color;
 
     .hero-content {
@@ -59,7 +59,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    
+
         .project-image {
             overflow: hidden;
             img {
@@ -80,6 +80,9 @@
         img {
             width: 100%;
         }
+        .img-shadow {
+            box-shadow: 0 2px 2px 0 #aaaaaa;
+        }
     }
     
     .project-conclusion {
@@ -87,6 +90,7 @@
         margin: 80px 0;
     }
 }
+
 
 // POP UP WORK
 iframe {
@@ -96,10 +100,4 @@ iframe {
 
 .modal {
     min-width: 90vw;
-}
-
-@media screen and (max-width: 800px) {
-    .modal {
-        min-width: 90vw;
-    }
 }

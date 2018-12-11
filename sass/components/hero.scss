@@ -23,3 +23,17 @@
         height: 100%;     
     }
 }
+
+.hero-content {
+    font-size: 1em;
+    .brackets {
+        font-family: $main-type;
+        font-weight: 400;
+        color: $yellow;
+    }
+
+    h1 {
+        color: #fff;
+    }
+
+}

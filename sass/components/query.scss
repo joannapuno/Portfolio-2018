@@ -6,6 +6,15 @@
     h1,h2,h3,h4,h5,p,span {
         text-align: center;
     }
+    p {
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
 
     //Hero
     .hero {
@@ -81,6 +90,15 @@
         height: 200px;
     }
 
+    .hero-content {
+        font-size: 0.8em;
+    
+    }
+
+    .project-hero {
+        height:20vh;
+    }
+
     //Contact Me
     .profile-container {
         margin: 0;
@@ -117,13 +135,31 @@
     }
 
     // Privacy Policy
-    @media screen and (max-width: 700px) {
-        .text-box {
-            p {
-                text-align: left;
-            }
+    .text-box {
+        p {
+            text-align: left;
         }
+    }  
+    .modal {
+        min-width: 90vw;
+        padding: 0;
     }
-    
+        
+    .project-body {
+        .project-info {
+            margin: 10px 0;
+            .project-text {
+                margin: 20px 0;
+            }
+        }        
+        .project-full {
+            margin: 10px 0;
+        }
+            
+        .project-conclusion {
+            margin: 20px 0;
+        }
+
+    }  
 }
 
