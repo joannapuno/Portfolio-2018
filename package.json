@@ -16,7 +16,7 @@
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
-    "react-modal": "^3.6.1",
-    "babel-cli": "^6.0.0"
+    "babel-cli": "^6.0.0",
+    "react-modal": "^3.6.1"
   }
 }
