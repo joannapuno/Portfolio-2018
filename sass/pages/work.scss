@@ -9,35 +9,96 @@
     .project-boxes {
         width: 100%;
         margin-top: 20px;
+        position: relative;
 
         .project-box {
             height: 260px;
             margin: 5px;  
             overflow: hidden;
-            
+            transition: .2s ease-in;
 
-            .thumb {  
+            .project-box:hover {
+                @keyframes fadeIn {
+                    0% {opacity: 0;}
+                    100% {opacity: 1;}
+                 } 
+            }
+        
+            .project-content {  
+                box-shadow: 1px 0px 4px 0 #a1a1a1dc; 
+
                 img {
                     height: 100%; 
-                    width: 100%;
-                    position: relative;  
-                    box-shadow: 1px 0px 4px 0 #a1a1a1dc; 
-                }
-
-                .hover-text {
-                    position: absolute;
-                    color: #222;
-                    font-size: 1em;
+                    width: 100%;                
                 }
             }
         }
     }
 }
 
-.project-box:hover {
-    background: white;
+.hover-buttons {
+    position: absolute;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top:50%;
+    bottom: 50%;
+    display: none;
+
+    button {
+        margin: 5px 0;
+        font-family: $main-type;
+        background: $main-color;
+        border: none;
+        color: #fff;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 100px;
+        transition: .2s ease-in;
+    }
+
+    button:hover {
+        background: #fff;
+        color: $main-color;
+        border: $main-color solid 1px;
+
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        } 
+    }
 }
 
+
+
+.mobile-buttons {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top:50%;
+    bottom: 50%;
+    display: none;
+    font-size: 20px;
+
+    button {
+        margin: 5px 0;
+        font-family: $main-type;
+        background: $main-color;
+        color: #fff;
+        padding: 10px 25px;
+        cursor: pointer;
+        border-radius: 100px;
+        border:none;
+    }
+}
 ///////////////// Projects - Single Project Page //////////////////
 .project-hero {
     height:200px;
@@ -92,20 +153,20 @@
 }
 
 
-// POP UP WORK
-.iframe-wrapper {
-    max-height: calc(100vh - 210px);
-    overflow-y: auto;
-}
-iframe {
-    min-height: 80vh;
-    width: 100%;
+// // POP UP WORK
+// .iframe-wrapper {
+//     max-height: calc(100vh - 210px);
+//     overflow-y: auto;
+// }
+// iframe {
+//     min-height: 80vh;
+//     width: 100%;
     
-}
+// }
 
-.modal {
-    min-width: 90vw;
-    z-index: 1000 !important;
-    max-height: 100vh;
-    overflow-y: auto;
-}
+// .modal {
+//     min-width: 90vw;
+//     z-index: 1000 !important;
+//     max-height: 100vh;
+//     overflow-y: auto;
+// }

@@ -1,9 +1,7 @@
 // GENERAL
-body.noScroll { /* ...or body.dialogShowing */
-    overflow: hidden;
-  }
-body {
-    overflow: hidden;
+
+* {
+    box-sizing: border-box;
 }
 
 .wrapper {

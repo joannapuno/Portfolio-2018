@@ -182,3 +182,22 @@
     }
 }
 
+
+@media screen and (max-width:800px) {
+    .mobile-buttons {
+        display: flex;
+    }
+
+    .hover-buttons {
+        display:none;
+    }
+
+    .project-content {  
+        background: $secondary-color;
+
+        img {
+            opacity: .2;               
+        }
+    }
+}
+

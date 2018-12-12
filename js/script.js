@@ -50,36 +50,38 @@ $("#downContactLink").click(function() {
     }, 2000);
 });
 
+// Hover on Project
 
-// //Scroll up when Refreshed
-// var body = $("html, body");
-// body.stop().animate({scrollTop:0}, 500, 'swing', function() { 
-// });
+(function ($) {
+    $(document).ready(function() {
+        $('.project-box').mouseover(function () {
+            $(this).find('.hover-buttons').css({'display':'flex'});
+            $(this).find('.project-content').css({'background':'#FFE3FA'});
+            $(this).find('img').css({'opacity':'.2'});
+        });
+        $('.project-box').mouseout(function () {
+            $(this).find('.hover-buttons').css({'display':'none'});
+            $(this).find('.project-content').css({'background':'#FFE3FA'});
+            $(this).find('img').css({'opacity':'1'});
+        });
+    });
+})(jQuery);
 
-////////////////// INTERACTIVE FUNCTIONS - FUN!!! ///////////////////////
 
-// Hover on Project box
-$('.thumb').mouseover(function(){
-    $(this).css('opacity','.2');
-    $('.hover-text span').text('Project Title');
-    
-}).mouseout(function(){
-    $(this).css('opacity','1');
-    
-});
+
 
 // Animate on Scroll
-$(document).ready(function() {
+// $(document).ready(function() {
 
-    $(window).scroll(function() {
+//     $(window).scroll(function() {
     
-      if ($(window).scrollTop() > 500) {
-          $(this).show("slide", { direction: "left" }, 1000);
-      }
-      if ($(window).scrollTop() < 500) { $('.work-info-text').slideUp(500);
-      }
-    });
-    });
+//       if ($(window).scrollTop() > 500) {
+//           $(this).show("slide", { direction: "left" }, 1000);
+//       }
+//       if ($(window).scrollTop() < 500) { $('.work-info-text').slideUp(500);
+//       }
+//     });
+//     });
 
 
     
