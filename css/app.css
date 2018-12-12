@@ -342,7 +342,7 @@ footer ul {
   background: white; }
 
 .project-hero {
-  height: 30vh;
+  height: 200px;
   background: #6350B1; }
   .project-hero .hero-content {
     height: 200px; }
@@ -376,11 +376,11 @@ footer ul {
   margin: 80px 0; }
 
 iframe {
-  min-height: 80vh;
+  min-height: 500px;
   width: 100%; }
 
 .modal {
-  min-width: 90vw; }
+  min-width: 400px; }
 
 .contact-container {
   margin: 30px 0;
@@ -477,7 +477,7 @@ iframe {
   .hero-content {
     font-size: 0.8em; }
   .project-hero {
-    height: 20vh; }
+    height: 100px; }
   .contact-container {
     margin: 20px 0;
     padding-top: 0; }

@@ -40,7 +40,7 @@
 
 ///////////////// Projects - Single Project Page //////////////////
 .project-hero {
-    height:30vh;
+    height:200px;
     background:$main-color;
 
     .hero-content {
@@ -94,10 +94,10 @@
 
 // POP UP WORK
 iframe {
-    min-height: 80vh;
+    min-height: 500px;
     width: 100%;
 }
 
 .modal {
-    min-width: 90vw;
+    min-width: 400px;
 }
