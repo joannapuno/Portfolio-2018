@@ -382,6 +382,10 @@ footer ul {
   text-align: center;
   margin: 80px 0; }
 
+.iframe-wrapper {
+  max-height: calc(100vh - 210px);
+  overflow-y: auto; }
+
 iframe {
   min-height: 80vh;
   width: 100%; }

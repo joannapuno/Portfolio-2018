@@ -93,9 +93,14 @@
 
 
 // POP UP WORK
+.iframe-wrapper {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
 iframe {
     min-height: 80vh;
     width: 100%;
+    
 }
 
 .modal {
