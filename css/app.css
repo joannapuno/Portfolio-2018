@@ -383,7 +383,8 @@ iframe {
   width: 100%; }
 
 .modal {
-  min-width: 90vw; }
+  min-width: 90vw;
+  z-index: 1000; }
 
 .contact-container {
   margin: 30px 0;
