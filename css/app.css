@@ -380,11 +380,12 @@ footer ul {
   overflow-y: scroll; }
 
 iframe {
-  min-height: 80vh;
+  height: 100%;
   width: 100%; }
 
 .modal {
-  min-width: 90vw; }
+  min-width: 90vw;
+  z-index: 10000; }
 
 .contact-container {
   margin: 30px 0;
