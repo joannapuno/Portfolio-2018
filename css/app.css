@@ -1,5 +1,9 @@
+body.noScroll {
+  /* ...or body.dialogShowing */
+  overflow: hidden; }
+
 body {
-  overflow-y: none; }
+  overflow: none; }
 
 .wrapper {
   width: 100%;
