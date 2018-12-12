@@ -41,13 +41,16 @@
         margin-top: 130px;
 
         .shapes-bg {
-            height: 100%;
-            top: -100px;
+            // height: 100%;
+            // top: -180px;
+            // width: 80vw;
+            // overflow: hidden;
               
-            svg {
-                height: 100%;
+            // svg {
+            //     height: 100%;
                 
-            }
+            // }
+            display: none;
         }
     
         .profile-bg {
@@ -105,8 +108,13 @@
     }
 
     //Contact Me
+    .contact-container {
+        margin: 20px 0;
+        padding-top:0;
+    }
     .profile-container {
         margin: 0;
+        padding-top: 0;
     }
     .contact-form {
         width: 80vw;
@@ -163,5 +171,14 @@
         }
 
     }  
+
+    .footer {
+        .menu-links {
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
 }
 
