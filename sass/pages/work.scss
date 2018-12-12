@@ -94,15 +94,14 @@
 
 // POP UP WORK
 .iframe-wrapper {
--webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
+    max-height: calc(100vh - 80px);
+overflow-y: auto;
 }
 iframe {
-    height: 100%;
+    min-height: 80vh;
     width: 100%;
 }
 
 .modal {
     min-width: 90vw;
-    z-index: 10000;
 }
