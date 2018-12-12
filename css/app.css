@@ -389,7 +389,8 @@ iframe {
   width: 100%; }
 
 .modal {
-  width: 300px; }
+  width: 300px;
+  min-height: 200px; }
 
 .contact-container {
   margin: 30px 0;
