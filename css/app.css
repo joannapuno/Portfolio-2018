@@ -388,7 +388,7 @@ iframe {
 
 .modal {
   min-width: 90vw;
-  z-index: 1000;
+  z-index: 1000 !important;
   max-height: 100vh;
   overflow-y: auto; }
 
