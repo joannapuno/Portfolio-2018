@@ -431,7 +431,7 @@ iframe {
   .text-box p {
     margin: 10px 0; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .wrapper {
     width: 100%;
     margin: 0;
@@ -439,7 +439,7 @@ iframe {
   h1, h2, h3, h4, h5, p, span {
     text-align: center; }
   p {
-    font-size: 1em; }
+    font-size: 17px; }
   h1 {
     font-size: 2em; }
   h2 {
@@ -479,7 +479,7 @@ iframe {
   .project-box {
     height: 200px; }
   .hero-content {
-    font-size: 0.8em; }
+    font-size: 16px; }
   .project-hero {
     height: 100px; }
   .contact-container {
