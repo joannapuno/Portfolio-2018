@@ -94,15 +94,14 @@
 
 // POP UP WORK
 .iframe-wrapper {
-    position: fixed; 
-  right: 0; 
-  bottom: 0; 
-  left: 0;
-  top: 0;
-  -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-  	overflow-y: scroll;
+//     position: fixed; 
+//   right: 0; 
+//   bottom: 0; 
+//   left: 0;
+//   top: 0;
+//   -webkit-overflow-scrolling: touch;
+//   overflow-y: scroll;
+  
 }
 iframe {
     height: 100%;
@@ -112,8 +111,10 @@ iframe {
 .modal {
    width: 300px;
    position: fixed; 
-   left: 50%;
-   top: 50%;
-    -webkit-overflow-scrolling: touch;
-  	overflow-y: scroll;
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  top: 0;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
 }
