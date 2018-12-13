@@ -84,8 +84,6 @@ $('.toTopLink').click(function() {
 })(jQuery);
 
 
-
-
 // // Animate on Scroll
 $(window).scroll(function() {
     if ($(this).scrollTop() > 1200) {
