@@ -52,7 +52,7 @@ h6 {
   font-size: 1.5em; }
 
 p {
-  font-size: 16px;
+  font-size: 19px;
   color: #444444; }
 
 span {
@@ -261,7 +261,7 @@ footer ul {
     text-align: center;
     padding: 20px; }
     .about-container .profile-text p {
-      font-size: 0.9em; }
+      font-size: 1.4em; }
 
 .work-info-container {
   margin-top: 150px;
@@ -321,6 +321,9 @@ footer ul {
     font-size: 3em;
     font-weight: 700;
     color: #6350B1; }
+
+#design {
+  transition: 2s ease; }
 
 .projects-container {
   text-align: center;

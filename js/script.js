@@ -71,20 +71,16 @@ $("#downContactLink").click(function() {
 
 
 // // Animate on Scroll
-// $(document).ready(function() {
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+        $( "#design" ).css('transform','translate(200px,0px)');
+       
+    } else {
+        $( "#design" ).css('position','relative');
+        
+    }
+    });
 
-//     $(window).scroll(function() {
-    
-//       if ($(window).scrollTop() > 500) {
-//           $(this).show("slide", { direction: "left" }, 1000);
-//       }
-//       if ($(window).scrollTop() < 500) { $('#design').slideUp(500);
-//       }
-//     });
-//     });
-
-
-    
 
 
 
