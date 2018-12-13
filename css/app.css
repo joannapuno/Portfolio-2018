@@ -429,6 +429,10 @@ footer ul {
   text-align: center;
   margin: 80px 0; }
 
+.plant {
+  box-shadow: 0px 1px 20px 0 rgba(78, 78, 78, 0.507);
+  margin: 20px 0; }
+
 .img-container {
   height: 600px;
   width: 600px;
@@ -534,6 +538,8 @@ footer ul {
     font-size: 16px; }
   .project-hero {
     height: 100px; }
+    .project-hero h1 {
+      font-size: 1em; }
   .contact-container {
     margin: 20px 0;
     padding-top: 0; }
