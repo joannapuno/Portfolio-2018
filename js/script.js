@@ -72,11 +72,12 @@ $("#downContactLink").click(function() {
 
 // // Animate on Scroll
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 500) {
         $( "#design" ).css('transform','translate(200px,0px)');
+        $( "#develop" ).css('transform','translate(-200px,0px)');
        
     } else {
-        $( "#design" ).css('position','relative');
+        $( "#design, #develop" ).css('position','relative');
         
     }
     });

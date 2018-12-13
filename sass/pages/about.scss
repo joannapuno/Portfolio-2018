@@ -77,7 +77,7 @@
 .work-info-box-1 {
     margin-top: 20px;
     width: 80%;
-    box-shadow: 1px 1px 5px 0 #22222261;
+    // box-shadow: 1px 1px 5px 0 #22222261;
 
     .work-info-icon {
         display: flex;
@@ -102,7 +102,7 @@
 .work-info-box-2 {
     margin-top: 20px;
     width: 80%;
-    box-shadow: 1px 1px 5px 0 #22222261;
+    // box-shadow: 1px 1px 5px 0 #22222261;
 
     .work-info-text {
         // position: fixed;
@@ -143,4 +143,11 @@
 
 #design {
     transition: 2s ease;
+    position: relative;
+    left:-200px;
+}
+#develop {
+    transition: 2s ease;
+    position: relative;
+    right:-200px;
 }

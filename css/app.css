@@ -275,8 +275,7 @@ footer ul {
 
 .work-info-box-1 {
   margin-top: 20px;
-  width: 80%;
-  box-shadow: 1px 1px 5px 0 #22222261; }
+  width: 80%; }
   .work-info-box-1 .work-info-icon {
     display: flex;
     justify-content: center;
@@ -294,8 +293,7 @@ footer ul {
 
 .work-info-box-2 {
   margin-top: 20px;
-  width: 80%;
-  box-shadow: 1px 1px 5px 0 #22222261; }
+  width: 80%; }
   .work-info-box-2 .work-info-text {
     height: 300px;
     width: 60%;
@@ -323,7 +321,14 @@ footer ul {
     color: #6350B1; }
 
 #design {
-  transition: 2s ease; }
+  transition: 2s ease;
+  position: relative;
+  left: -200px; }
+
+#develop {
+  transition: 2s ease;
+  position: relative;
+  right: -200px; }
 
 .projects-container {
   text-align: center;
