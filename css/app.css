@@ -264,7 +264,8 @@ footer ul {
     text-align: center;
     padding: 20px; }
     .about-container .profile-text p {
-      font-size: 1.4em; }
+      font-size: 1.4em;
+      margin-top: 20px; }
 
 .work-info-container {
   margin-top: 90px;
@@ -538,6 +539,8 @@ footer ul {
     .about-container .profile-bg {
       width: 80%;
       padding: 50px 10px; }
+      .about-container .profile-bg p {
+        font-size: 1.2em; }
     .about-container .profile-img {
       width: 160px;
       height: 160px;
