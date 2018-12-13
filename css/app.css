@@ -23,6 +23,9 @@ ul, li {
 button {
   box-shadow: 1px 3px 5px 0 rgba(88, 88, 88, 0.411); }
 
+.menuBtn {
+  box-shadow: none; }
+
 a:hover {
   cursor: pointer; }
 
@@ -37,7 +40,7 @@ h1 {
   font-size: 3em; }
 
 h2 {
-  font-size: 2.5em; }
+  font-size: 2.3em; }
 
 h3 {
   font-size: 2.2em; }
@@ -510,13 +513,14 @@ footer ul {
   h1 {
     font-size: 2em; }
   h2 {
-    font-size: 1.5em; }
+    font-size: 1.8em; }
   .hero {
     height: 80vh; }
     .hero .hero-content svg {
       height: 80%; }
   nav {
-    min-height: 80vh; }
+    min-height: 80vh;
+    max-height: 80vh; }
   .about-container {
     margin-bottom: 0;
     margin-top: 130px; }
