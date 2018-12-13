@@ -15,38 +15,54 @@ $('.menuBtn').on('click', function() {
 ////////////////// SCROLLING ON CLICK FUNCTION///////////////////////
 
 // Main Down Arrow Button
-$("#downLink").click(function() {
+$('#downLink').click(function() {
     var offset = 20; 
 
     $('html, body').animate({
-        scrollTop: $("#down").offset().top + offset
+        scrollTop: $('#down').offset().top + offset
     }, 1000);
 });
 
 // About Down Arrow Button
-$("#downAboutLink").click(function() {
+$('#downAboutLink').click(function() {
     var offset = 20; 
 
     $('html, body').animate({
-        scrollTop: $("#down").offset().top + offset
+        scrollTop: $('#down').offset().top + offset
+    }, 1000);
+});
+// What I do Down Arrow Button
+$('#downWhatLink').click(function() {
+    var offset = 20; 
+
+    $('html, body').animate({
+        scrollTop: $('#downWhat').offset().top + offset
     }, 1000);
 });
 
 // Projects Down Arrow Button
-$("#downWorkLink").click(function() {
+$('.downWorkLink').click(function() {
     var offset = 20; 
 
     $('html, body').animate({
-        scrollTop: $("#downWork").offset().top + offset
+        scrollTop: $('#downWork').offset().top + offset
     }, 2000);
 });
 
 // Contact Me Down Arrow Button
-$("#downContactLink").click(function() {
+$('.downContactLink').click(function() {
     var offset = 20; //Offset of 20px
 
     $('html, body').animate({
-        scrollTop: $("#downContact").offset().top + offset
+        scrollTop: $('#downContact').offset().top + offset
+    }, 2000);
+});
+// Back to Top Down Arrow Button
+$('.toTopLink').click(function() {
+    var offset = 20; //Offset of 20px
+
+    $('html, body').animate({
+        scrollTop: $('#toTop').offset().top + offset
     }, 2000);
 });
 
@@ -72,16 +88,12 @@ $("#downContactLink").click(function() {
 
 // // Animate on Scroll
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 500) {
-        $( "#design" ).css('transform','translate(200px,0px)');
-        $( "#develop" ).css('transform','translate(-200px,0px)');
+    if ($(this).scrollTop() > 1200) {
+        $( '#design' ).css('transform','translate(200px,0px)');
+        $( '#develop' ).css('transform','translate(-200px,0px)');
        
     } else {
-        $( "#design, #develop" ).css('position','relative');
+        $( '#design, #develop' ).css('position','relative');
         
     }
-    });
-
-
-
-
+});

@@ -267,7 +267,7 @@ footer ul {
       font-size: 1.4em; }
 
 .work-info-container {
-  margin-top: 150px;
+  margin-top: 90px;
   text-align: center; }
 
 .mobile-text {
@@ -333,10 +333,19 @@ footer ul {
   position: relative;
   right: -200px; }
 
+.mainDown {
+  margin-top: 50px;
+  height: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center; }
+  .mainDown svg {
+    height: 100%; }
+
 .projects-container {
   text-align: center;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 50px; }
   .projects-container .project-boxes {
     width: 100%;

@@ -62,7 +62,7 @@
 ///////////////// What I do //////////////////
 
 .work-info-container {
-    margin-top: 150px;
+    margin-top: 90px;
     text-align: center;
     
 }
@@ -150,4 +150,17 @@
     transition: 2s ease;
     position: relative;
     right:-200px;
+}
+
+// Arrow Down
+.mainDown {
+    margin-top: 50px;
+    height: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+
+    svg {
+        height: 100%;     
+    }
 }
