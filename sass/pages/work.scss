@@ -16,16 +16,10 @@
             margin: 5px;  
             overflow: hidden;
             transition: .2s ease-in;
-
-            .project-box:hover {
-                @keyframes fadeIn {
-                    0% {opacity: 0;}
-                    100% {opacity: 1;}
-                 } 
-            }
         
             .project-content {  
                 box-shadow: 1px 0px 4px 0 #a1a1a1dc; 
+                overflow: hidden;
 
                 img {
                     height: 100%; 
@@ -152,21 +146,15 @@
     }
 }
 
+///////////////// Projects - Graphic Design //////////////////
 
-// // POP UP WORK
-// .iframe-wrapper {
-//     max-height: calc(100vh - 210px);
-//     overflow-y: auto;
-// }
-// iframe {
-//     min-height: 80vh;
-//     width: 100%;
-    
-// }
+.img-container {
+    height: 600px;
+    width: 600px;
+    overflow: hidden;
+    margin-top: 40px;
 
-// .modal {
-//     min-width: 90vw;
-//     z-index: 1000 !important;
-//     max-height: 100vh;
-//     overflow-y: auto;
-// }
+    img {
+        width: 100%;
+    }
+}

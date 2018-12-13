@@ -333,14 +333,9 @@ footer ul {
       margin: 5px;
       overflow: hidden;
       transition: .2s ease-in; }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
       .projects-container .project-boxes .project-box .project-content {
-        box-shadow: 1px 0px 4px 0 #a1a1a1dc; }
+        box-shadow: 1px 0px 4px 0 #a1a1a1dc;
+        overflow: hidden; }
         .projects-container .project-boxes .project-box .project-content img {
           height: 100%;
           width: 100%; }
@@ -433,6 +428,14 @@ footer ul {
 .project-body .project-conclusion {
   text-align: center;
   margin: 80px 0; }
+
+.img-container {
+  height: 600px;
+  width: 600px;
+  overflow: hidden;
+  margin-top: 40px; }
+  .img-container img {
+    width: 100%; }
 
 .contact-container {
   margin: 30px 0;

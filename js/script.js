@@ -70,7 +70,7 @@ $("#downContactLink").click(function() {
 
 
 
-// Animate on Scroll
+// // Animate on Scroll
 // $(document).ready(function() {
 
 //     $(window).scroll(function() {
@@ -78,7 +78,7 @@ $("#downContactLink").click(function() {
 //       if ($(window).scrollTop() > 500) {
 //           $(this).show("slide", { direction: "left" }, 1000);
 //       }
-//       if ($(window).scrollTop() < 500) { $('.work-info-text').slideUp(500);
+//       if ($(window).scrollTop() < 500) { $('#design').slideUp(500);
 //       }
 //     });
 //     });
