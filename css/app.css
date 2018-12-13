@@ -20,6 +20,9 @@ ul, li {
   ul li, li li {
     margin-right: 20px; }
 
+button {
+  box-shadow: 1px 3px 5px 0 rgba(88, 88, 88, 0.411); }
+
 a:hover {
   cursor: pointer; }
 
@@ -541,13 +544,11 @@ footer ul {
     .project-hero h1 {
       font-size: 1em; }
   .contact-container {
-    margin: 20px 0;
+    margin: 50px 0;
     padding-top: 0; }
   .profile-container {
     margin: 0;
     padding-top: 0; }
-  .contact-form {
-    width: 80vw; }
   .contact-info {
     text-align: center; }
   .contact-heading {
@@ -555,8 +556,12 @@ footer ul {
   .contact-heading-sm {
     display: block;
     margin-bottom: 10px; }
+  .contact-form iframe {
+    height: 50vh;
+    width: 100%; }
   .location-map iframe {
-    height: 40vh; }
+    height: 40vh;
+    width: 80vw; }
   .text-box p {
     text-align: left; }
   .modal {
@@ -580,6 +585,7 @@ footer ul {
   .hover-buttons {
     display: none; }
   .project-content {
-    background: #FFE3FA; }
+    background: #FFE3FA;
+    opacity: .5; }
     .project-content img {
       opacity: .2; } }

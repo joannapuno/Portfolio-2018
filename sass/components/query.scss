@@ -110,19 +110,18 @@
             font-size: 1em;
         }
     }
+    
 
     //Contact Me
     .contact-container {
-        margin: 20px 0;
+        margin: 50px 0;
         padding-top:0;
     }
     .profile-container {
         margin: 0;
         padding-top: 0;
     }
-    .contact-form {
-        width: 80vw;
-    }
+
     .contact-info {
         text-align: center;
     }
@@ -136,15 +135,22 @@
         margin-bottom: 10px;
     }
 
-    // .email-link {
-    //     font-size: 20px;
-    // }
+    .contact-form {
+    
+        iframe {
+            height: 50vh;
+            width: 100%;
+           
+        }
+    }
+    
 
 
     // Google Map
     .location-map {
         iframe {
             height: 40vh;
+            width:80vw;
         }
     }
 
@@ -198,6 +204,7 @@
 
     .project-content {  
         background: $secondary-color;
+        opacity: .5;
 
         img {
             opacity: .2;               
