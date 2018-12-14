@@ -67,6 +67,27 @@ $('.toTopLink').click(function() {
 });
 
 // Hover on Project + Query/Window Resize
+let eventFired = 0;
+
+if ($(window).width() < 960) {
+    $('.project-box').mouseover(function () {
+        $(this).find('.hover-buttons').css({'display':'none'});
+    });
+}
+else {
+    $('.project-box').mouseover(function () {
+        $(this).find('.hover-buttons').css({'display':'flex'});
+        $(this).find('.project-content').css({'background':'#FFE3FA'});
+        $(this).find('img').css({'opacity':'.2'});
+    });
+    $('.project-box').mouseout(function () {
+        $(this).find('.hover-buttons').css({'display':'none'});
+        $(this).find('.project-content').css({'background':'#FFE3FA'});
+        $(this).find('img').css({'opacity':'1'});
+    });
+    eventFired = 1;
+}
+
 (function ($) {
     $(document).ready(function() {
 
@@ -91,6 +112,9 @@ $('.toTopLink').click(function() {
         }); 
     });
 })(jQuery);
+
+
+
 
 // // Animate on Scroll
 $(window).scroll(function() {
