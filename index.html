@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Front-End Web Developer with a Graphic Design background. Focused on interactivity and User Experience">
+    <meta name="keywords" content="front end, developer, website, graphic design, joanna puno, user experience, javascript, design">
     <title>Joanna Puno</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="./css/app.css">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
 </head>
 <body>
 
     <!-- HEADER -->
-    <header>
+    <header id="toTop">
         <!-- NAV BAR -->
             <div class="menu-container">
                 <button class="menuBtn menu" type="button">
@@ -23,9 +26,9 @@
                         <ul>
                             <li><a href="./index.html" >Home</a></li>
                             <li><a href="#down" id="downAboutLink">About Me</a></li>
-                            <li><a href="#downWork" id="downWorkLink">Work</a></li>
-                            <li><a href="#">Graphic Design</a></li>
-                            <li><a href="#downContact" id="downContactLink">Contact Me</a></li>
+                            <li><a href="#downWork" class="downWorkLink">Work</a></li>
+                            <li><a href="#downContact" class="downContactLink">Contact Me</a></li>
+                            <li><a href="./views/graphicDesign.html">Graphic Design Work</a></li>
                         </ul>
                     </nav>
             </div>
@@ -51,7 +54,7 @@
                 </svg>  
             </a>    
             </div> 
-            <div class="down-arrow">
+            <div class="down-arrow bounce">
                 <a href="#down" id="downLink" style="display:block; height: 100%; cursor: pointer;">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.729 33.561" pointer-events: none;>
                         <defs>
@@ -70,11 +73,11 @@
         </div>
     </header>
     <!-- MAIN BODY -->
-    <main id="down">
+    <main>
         <div class="wrapper">
-            <div class="main-content">
+            <div class="main-content" id="down">
                 <!-- ABOUT SECTION -->
-                <div class="about-container d-flex align-items-center justify-content-center row" >
+                <div class="about-container d-flex align-items-center justify-content-center row">
                         <div class="shapes-bg">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1718.534 1348.402">
                                     <defs>
@@ -128,20 +131,40 @@
                         </div>
                     <div class="profile-bg col-lg-6 col-md-6 col-sm-12">
                         <div class="profile-text">
-                            <h5>I'm Joanna!!!!!</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ipsum inventore nesciunt ut autem magni perferendis fuga soluta optio et aliquam esse laudantium a enim necessitatibus dolore, debitis at tenetur.</p>
+                            <h2>I'm Joanna!</h2>
+                            <p>I am a Front-End developer with a Graphic Design background. My passion for adding interactivity and functionality to my designs drove me to development and I am really enjoying both worlds!</p>
+                            <br>
+                            <p>When I am not coding, I am out playing board games with friends, going for long walks, attending expos or conferences, or just home drawing on my sketchbook</p>
                         </div>
+                        <div class="mainDown bounce">
+                            <a href="#downWhat" id="downWhatLink" style="display:block; height: 100%; cursor: pointer;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.729 33.561" pointer-events: none;>
+                                    <defs>
+                                        <style>
+                                            .mainDown{
+                                            fill: none;
+                                            stroke: #6350B1;
+                                            stroke-width: 4px;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path id="Path_1" data-name="Path 1" class="mainDown" d="M929.822,1001.629l29.8,29.313,29.1-29.313" transform="translate(-928.42 -1000.203)"/>        
+                                </svg>  
+                            </a>
+                        </div> 
                     </div>
                     <div class="profile-img d-flex align-items-center justify-content-center col-lg-6 col-md-6 col-sm-12">
-                        <img src="./img/profile.png" alt="">
+                        <img src="./img/profile.png" alt="joanna puno profile picture">
                     </div>
                 </div>
 
+                
+
                 <!-- WHAT I DO SECTION -->
 
-                <div class="work-info-container d-flex flex-column align-items-center">
+                <div class="work-info-container d-flex flex-column align-items-center" id="downWhat">
                     <div class="section-text d-flex flex-column align-items-center">
-                        <h5>What do I do?!</h5>
+                        <h2>What I'm Passionate About</h2>
                     </div>
                     <div class="work-info-box-1 d-flex">
                         <div class="work-info-icon">
@@ -162,7 +185,7 @@
                             
                             <span class="mobile-text">DESIGN</span>
                         </div>
-                        <div class="work-info-text">
+                        <div class="work-info-text" id="design">
                             <span>
                                 DESIGN
                             </span>
@@ -170,7 +193,7 @@
                     </div>
 
                     <div class="work-info-box-2 d-flex">
-                        <div class="work-info-text">
+                        <div class="work-info-text" id="develop">
                             <span>
                                 DEVELOPMENT
                             </span>
@@ -198,78 +221,186 @@
 
                 </div>
 
+                <div class="mainDown bounce">
+                    <a href="#downWork" class="downWorkLink" style="display:block; height: 100%; cursor: pointer;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.729 33.561" pointer-events: none;>
+                            <defs>
+                                <style>
+                                    .mainDown{
+                                    fill: none;
+                                    stroke: #6350B1;
+                                    stroke-width: 4px;
+                                    }
+                                </style>
+                            </defs>
+                            <path id="Path_1" data-name="Path 1" class="mainDown" d="M929.822,1001.629l29.8,29.313,29.1-29.313" transform="translate(-928.42 -1000.203)"/>        
+                        </svg>  
+                    </a>
+                </div> 
+
+                
                 <!-- PROJECTS SECTION -->
                 <div id="downWork" class="projects-container d-flex flex-column align-items-center">
                     <div class="section-text d-flex flex-column align-items-center">
-                        <h5>Here are my beloved works!!</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate delectus vero, illum rerum saepe placeat explicabo similique, eaque accusantium voluptate quidem accusamus laudantium. Dolor esse fuga in dicta, impedit iusto!
-                            </p>
+                        <h2>Work</h2>
+                            <p>My projects consist of web design + development from SAIT and some projects I've been doing on the side for self-learning purposes.</p>
+
+                            <p>I will be learning everyday in this journey and it's going to be frustrating, fun, and fulfilling. </p>
+                    </div>
+                    <!-- PROJECT #1 -->
+                    <div class="project-boxes d-flex row justify-content-center align-items-center">
+                       
+                        <div class="project-box project-box col-lg-3 col-md-4 col-sm-12">
+                            <div class="project-content">
+                                <img src="./img/thumbs/thumbs-01.png" alt="quote machine thumbnail">
+                            </div> 
+                            <div class="hover-buttons" id="hover-buttons">
+                                <a href="https://joannapuno.github.io/fancy-todo/"><button>Web App Link</button></a>
+                                <a href="https://expo.io/@joannapuno/fancytodo2"><button>Mobile Link</button></a>
+                                <a href="./views/todo.html"><button>My Process</button></a>
+                            </div>   
+                            <div class="mobile-buttons">
+                                <a href="https://joannapuno.github.io/fancy-todo/"><button>Project Link</button></a>
+                                <a href="./views/todo.html"><button>My Process</button></a>
+                            </div>    
+                        </div>
+                            
+                    <!-- PROJECT #2 -->
+                        <div class="project-box project-box col-lg-3 col-md-4 col-sm-12">
+                            <div class="project-content">
+                                <img src="./img/thumbs/thumbs-02.png" alt="quote machine thumbnail">
+                            </div> 
+                            <div class="hover-buttons">
+                                <a href="https://joannapuno.github.io/QuoteMachine/"><button>Project Link</button></a>
+                                <a href="./views/quoteMachine.html"><button>My Process</button></a>
+                            </div>   
+                            <div class="mobile-buttons">
+                                <a href="https://joannapuno.github.io/QuoteMachine/"><button>Project Link</button></a>
+                                <a href="./views/quoteMachine.html"><button>My Process</button></a>
+                            </div>   
+                        </div>
+
+                    <!-- PROJECT #3 -->
+                        <div class="project-box project-box col-lg-3 col-md-4 col-sm-12">
+                            <div class="project-content">
+                                <img src="./img/thumbs/thumbs-03.png" alt="sechelt web thumbnail">
+                            </div> 
+                            <div class="hover-buttons" id="sechelt">
+                                <a href="http://35.188.92.2/"><button>Project Link</button></a>
+                                <a href="./views/sechelt.html"><button>My Process</button></a>
+                            </div>   
+                            <div class="mobile-buttons">
+                                <a href="http://35.188.92.2/"><button>Project Link</button></a>
+                                <a href="./views/sechelt.html"><button>My Process</button></a>
+                            </div>   
+                        </div>
+
+                    <!-- PROJECT #4 -->
+                        <div class="project-box project-box col-lg-3 col-md-4 col-sm-12">
+                            <div class="project-content">
+                                <img src="./img/thumbs/thumbs-04.png" alt="newsfeed thumbnail">
+                            </div> 
+                            <div class="hover-buttons" id="newsfeed">
+                                <a href="http://ec2-35-182-231-156.ca-central-1.compute.amazonaws.com/"><button>Project Link</button></a>
+                                <a href="./views/newsfeed.html"><button>My Process</button></a>
+                            </div>   
+                            <div class="mobile-buttons">
+                                <a href="http://ec2-35-182-231-156.ca-central-1.compute.amazonaws.com/"><button>Project Link</button></a>
+                                <a href="./views/newsfeed.html"><button>My Process</button></a>
+                            </div>   
+                        </div>
+
+                    <!-- PROJECT #5 -->
+                        <div class="project-box project-box col-lg-3 col-md-4 col-sm-12">
+                            <div class="project-content">
+                                <img src="./img/thumbs/thumbs-05.png" alt="plant journal thumbnail">
+                            </div> 
+                            <div class="hover-buttons" id="plant">
+                                <a href="./views/plant.html"><button>My Process</button></a>
+                            </div>   
+                            <div class="mobile-buttons">
+                                <a href="./views/plant.html"><button>My Process</button></a>
+                            </div>   
+                        </div>
+
+                    <!-- PROJECT #6 -->
+                        <div class="project-box project-box col-lg-3 col-md-4 col-sm-12">
+                            <div class="project-content">
+                                <img src="./img/thumbs/thumbs-06.png" alt="joke project thumbnail">
+                            </div> 
+                            <div class="hover-buttons" id="joke">
+                                <a href="https://joannapuno.github.io/joke-machine/"><button>Project Link</button></a>
+                            </div>   
+                            <div class="mobile-buttons">
+                                <a href="https://joannapuno.github.io/joke-machine/"><button>Project Link</button></a>
+                            </div>   
+                        </div>
                     </div>
 
-                    <div class="project-boxes d-flex row justify-content-center">
-                       <a href="./views/quoteMachine.html" class=" project-box col-lg-3 col-md-4 col-sm-12">
-                            <div class="thumb">
-                                <img src="./img/quoteMachine/quoteMachine-1.png" alt="">
-                            </div>
+                    <div class="mainDown bounce">
+                        <a href="#downContact" class="downContactLink" style="display:block; height: 100%; cursor: pointer;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.729 33.561" pointer-events: none;>
+                                <defs>
+                                    <style>
+                                        .mainDown{
+                                        fill: none;
+                                        stroke: #6350B1;
+                                        stroke-width: 4px;
+                                        }
+                                    </style>
+                                </defs>
+                                <path id="Path_1" data-name="Path 1" class="mainDown" d="M929.822,1001.629l29.8,29.313,29.1-29.313" transform="translate(-928.42 -1000.203)"/>        
+                            </svg>  
                         </a>
-                       <a href="./quoteMachine.html" class=" project-box col-lg-3 col-md-4 col-sm-12">
-                            <div class="thumb">
-                                <img src="./img/quoteMachine/quoteMachine-1.png" alt="">
-                            </div>
-                        </a>
-                       <a href="./quoteMachine.html" class=" project-box col-lg-3 col-md-4 col-sm-12">
-                            <div class="thumb">
-                                <img src="./img/quoteMachine/quoteMachine-1.png" alt="">
-                            </div>
-                        </a>
-                        
-                    </div>
-                </div>
+                    </div> 
 
 
                 <!-- CONTACT SECTION -->
 
-                <div id="downContact" class="contact-container d-flex justify-content-center row">
+                <div id="downContact" class="contact-container d-flex flex-column justify-content-center align-items-center row">
                     <div class="contact-heading-sm">
-                        <h5>Contact me!!</h5>
-                        <p>some subtitle</p>
+                        <h2>Contact me</h2>
                     </div>
                     <div class="profile-container">
                         <div class="profile-img-container">
-                            <img src="./img/profile.png" alt="">
+                            <img src="./img/profile.png" alt="joanna puno profile picture">
                         </div>
+                        
                         <div class="social-icons d-flex align-items-center justify-content-center">
-                           <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
-                            <a href="#"><i class="fab fa-github fa-lg"></i></a>
-                            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                            <a href="mailto:j.puno0909@gmail.com"><i class="far fa-envelope fa-lg "></i></a>
+                            <a href="https://www.linkedin.com/in/joanna-puno-785402137/"><i class="fab fa-linkedin fa-lg"></i></a>
+                            <a href="https://github.com/joannapuno"><i class="fab fa-github fa-lg"></i></a>
+                            <a href="https://www.instagram.com/joanna.puno/"><i class="fab fa-instagram fa-lg"></i></a>
                         </div>
                     </div>
                     <div class="contact-info">
                         <div class="contact-heading">
-                            <h5>Contact me!!</h5>
-                            <p>some subtitle</p>
+                            <h2>Contact me</h2>
                         </div>
-                        <div class="email-box d-flex align-items-center">
-                            <div class="icon">
-                               <a href="#"><i class="far fa-envelope fa-lg "></i></a> 
-                            </div>
-                            <div class="email-link">
-                               <a href="#"><span>J.Puno0909@gmail.com</span></a>
-                            </div>
+                        <div class="contact-form "> 
+                            
+                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfRz2whP7hAmAKRiIloXREmIi6QNu_1rLsFIjR93IWy9UnnvQ/viewform?embedded=true" frameborder="0">Loading...</iframe>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="project-links-list ">
-                    <ul class="d-flex justify-content-center">
-                            <li><a href="#">Hop Travel Agency</a></li>
-                            <li><a href="#">Fancy To-do App</a></li>
-                            <li><a href="#">Quote Machine</a></li>
-                            <li><a href="#">Plant Log</a></li>
-                            <li><a href="#">Sechelt Visitor Centre</a></li>
-                            <li><a href="#">News Feed</a></li>
-                    </ul>
-                </div>
             </div>
+        </div> 
+        <div class="mainDown bounce">
+            <a href="#toTop" class="toTopLink" style="display:block; height: 100%; cursor: pointer; transform: rotate(180deg);">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.729 33.561" pointer-events: none;>
+                    <defs>
+                        <style>
+                            .mainDown{
+                            fill: none;
+                            stroke: #6350B1;
+                            stroke-width: 4px;
+                            }
+                        </style>
+                    </defs>
+                    <path id="Path_1" data-name="Path 1" class="mainDown" d="M929.822,1001.629l29.8,29.313,29.1-29.313" transform="translate(-928.42 -1000.203)"/>        
+                </svg>  
+            </a>
         </div> 
     </main>
     
@@ -278,13 +409,16 @@
         <div class="footer d-flex align-items-center justify-content-center row">
            <div class="menu-links">
                <ul class="d-flex">
-                   <li><a href="#">About</a></li>
-                   <li><a href="#">Work</a></li>
-                   <li><a href="#">Contact Me</a></li>
+                    <li><a href="./index.html" >Home</a></li>
+                    <li><a href="#down">About Me</a></li>
+                    <li><a href="#downWork">Work</a></li>
+                    <li><a href="./privacypolicy.html">Privacy Policy</a></li>
+                    <li><a href="#downContact">Contact Me</a></li>
                </ul>
            </div>
            <div class="copyright">
                 <span>Joanna Puno 2018 &copy;</span>
+                <span>Maraming Salamat Po!</span>
            </div> 
         </div>
     </footer>
@@ -294,8 +428,9 @@
     <script>
             window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')    
     </script>
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <script src="./js/script.js"></script> 
 </body>
 </html>
+

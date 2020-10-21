@@ -1,14 +1,24 @@
 ///////////////// MEDIA Qs //////////////////
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
+    .wrapper {
+        width: 100%;
+        margin: 0;
+        max-width: 1000px;
+    }
 
     //Type
     h1,h2,h3,h4,h5,p,span {
         text-align: center;
     }
-
-    h1,h2,h3,h4,h5 {
-        font-size: 1.3em;
+    p {
+        font-size: 17px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.8em;
     }
 
     //Hero
@@ -19,25 +29,28 @@
             }
     }
 
+    // Header/Menu
+
+    nav {
+        min-height: 70vh;
+    }
+
     //About
     .about-container {
         margin-bottom: 0;
         margin-top: 130px;
 
         .shapes-bg {
-            height: 100%;
-            top: -100px;
-           
-            
-            svg {
-                height: 100%;
-                
-            }
+            display: none;
         }
     
         .profile-bg {
             width: 80%;
-            padding: 50px 10px;      
+            padding: 50px 10px;   
+            
+            p {
+                font-size: 1.2em;
+            }
         }
     
         .profile-img {
@@ -80,10 +93,30 @@
         height: 200px;
     }
 
+    .hero-content {
+        font-size: 16px;
+    
+    }
+
+    .project-hero {
+        height:100px;
+
+        h1 {
+            font-size: 1em;
+        }
+    }
+    
+
     //Contact Me
+    .contact-container {
+        margin: 50px 0;
+        padding-top:0;
+    }
     .profile-container {
         margin: 0;
+        padding-top: 0;
     }
+
     .contact-info {
         text-align: center;
     }
@@ -97,16 +130,80 @@
         margin-bottom: 10px;
     }
 
-    .email-link {
-        font-size: 20px;
-    }
-
-    // Project-Links
-    .project-links-list ul{
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
+    .contact-form {
+    
+        iframe {
+            height: 50vh;
+            width: 100%;
+           
+        }
     }
     
+
+
+    // Google Map
+    .location-map {
+        iframe {
+            height: 40vh;
+            width:80vw;
+        }
+    }
+
+    // Privacy Policy
+    .text-box {
+        p {
+            text-align: left;
+        }
+    }  
+    .modal {
+        min-width: 90vw;
+        padding: 0;
+    }
+        
+    .project-body {
+        .project-info {
+            margin: 10px 0;
+            .project-text {
+                margin: 20px 0;
+            }
+        }        
+        .project-full {
+            margin: 10px 0;
+        }
+            
+        .project-conclusion {
+            margin: 20px 0;
+        }
+
+    }  
+
+    .footer {
+        .menu-links {
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .mobile-buttons {
+        display: flex;
+    }
+
+    .hover-buttons {
+        display:none;
+    }
+
+    .project-content {  
+        background: $secondary-color;
+        opacity: .5;
+
+        img {
+            opacity: .2;               
+        }
+    }
 }
 

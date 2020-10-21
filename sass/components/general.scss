@@ -1,5 +1,9 @@
 // GENERAL
 
+* {
+    box-sizing: border-box;
+}
+
 .wrapper {
     width: 100%;
     margin: 0 auto;
@@ -24,6 +28,14 @@ ul,li {
     }
 }
 
+button {
+    box-shadow: 1px 3px 5px 0 rgba(88, 88, 88, 0.411);
+}
+
+.menuBtn {
+    box-shadow: none;
+}
+
 a:hover {
     cursor: pointer;
 }
@@ -44,16 +56,35 @@ h1,h2,h3,h4,h5 {
     color: $main-color;
 }
 
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.3em;
+}
+h3 {
+    font-size: 2.2em;
+}
+h4 {
+    font-size: 2em;
+}
 h5 {
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 1.8em;
+}
+
+h6 {
+    font-size: 1.5em;
 }
 
 p {
-    font-size: 16px;
+    font-size: 19px;
     color: rgb(68, 68, 68);
 }
 
 span {
     color: rgb(68, 68, 68);
 }
+
+
+
+

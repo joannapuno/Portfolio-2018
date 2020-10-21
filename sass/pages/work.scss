@@ -3,30 +3,99 @@
 .projects-container {
     text-align:center;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 50px;
 
     .project-boxes {
         width: 100%;
         margin-top: 20px;
+        position: relative;
 
         .project-box {
             height: 260px;
             margin: 5px;  
             overflow: hidden;
+            transition: .2s ease-in;
+        
+            .project-content {  
+                box-shadow: 1px 0px 4px 0 #a1a1a1dc; 
+                overflow: hidden;
 
-            .thumb {  
                 img {
-                    height: 100%;
+                    height: 100%; 
+                    width: 100%;                
                 }
             }
         }
     }
 }
 
+.hover-buttons {
+    position: absolute;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top:50%;
+    bottom: 50%;
+    display: none;
+
+    button {
+        margin: 5px 0;
+        font-family: $main-type;
+        background: $main-color;
+        border: none;
+        color: #fff;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 100px;
+        transition: .2s ease-in;
+    }
+
+    button:hover {
+        background: #fff;
+        color: $main-color;
+        border: $main-color solid 1px;
+
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        } 
+    }
+}
+
+
+
+.mobile-buttons {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top:50%;
+    bottom: 50%;
+    display: none;
+    font-size: 20px;
+
+    button {
+        margin: 5px 0;
+        font-family: $main-type;
+        background: $main-color;
+        color: #fff;
+        padding: 10px 25px;
+        cursor: pointer;
+        border-radius: 100px;
+        border:none;
+    }
+}
 ///////////////// Projects - Single Project Page //////////////////
 .project-hero {
-    height:50vh;
+    height:200px;
     background:$main-color;
 
     .hero-content {
@@ -45,7 +114,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    
+
         .project-image {
             overflow: hidden;
             img {
@@ -66,10 +135,31 @@
         img {
             width: 100%;
         }
+        .img-shadow {
+            box-shadow: 0 2px 2px 0 #aaaaaa;
+        }
     }
     
     .project-conclusion {
         text-align: center;
         margin: 80px 0;
+    }
+}
+
+.plant {
+    box-shadow: 0px 1px 20px 0 rgba(78, 78, 78, 0.507);
+    margin: 20px 0;
+}
+
+///////////////// Projects - Graphic Design //////////////////
+
+.img-container {
+    height: 600px;
+    width: 600px;
+    overflow: hidden;
+    margin-top: 40px;
+
+    img {
+        width: 100%;
     }
 }
